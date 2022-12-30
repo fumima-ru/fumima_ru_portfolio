@@ -1,0 +1,506 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: rgb(90, 89, 89);
+  font-size: 1rem;
+  width: 100%;
+  /*font-family: ;*/
+  /* 後で要確認 */
+  
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: rgb(90, 89, 89);
+  text-decoration: none;
+}
+
+p {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 3rem;
+}
+
+/* --.container(ポートフォリオ全ページ)------- */
+.container {
+  max-width: 1400px;
+  margin: 15px 15px;
+}
+
+/* --#header(ポートフォリオ全ページ)----------------------- */
+#header {
+  width: 100%;
+  padding: 0 30px;
+  color: rgb(90, 89, 89);
+  height: 100px;
+  border-bottom: solid 1px rgb(90, 89, 89);
+  position: fixed;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  background-color: #fff;
+  z-index: 50;
+}
+
+.header {
+  max-width: 1400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+#header .site-title {
+  font-size: 1.25rem;
+  text-shadow: 0 0 2px rgb(90, 89, 89);
+}
+
+/* --#navi .menu(ポートフォリオ全ページ)------------ */
+#page-top {
+  text-shadow: 0 0 2px rgb(90, 89, 89);
+}
+
+/* --.section-title(index.html)----- */
+.section-title {
+  font-weight: normal;
+  text-align: center;
+  /* 疑似要素をサイドに移動 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.section-title::before,
+.section-title::after {
+  display: block;
+  content: "";
+  background-color: rgb(90, 89, 89);
+  width: 20%;
+  height: 1px;
+  margin: 0 20px;
+}
+
+/* --#navi .menu(index.html)------------ */
+#header #navi .menu {
+  display: flex;
+}
+
+#header #navi .menu li {
+  margin: 0 30px;
+}
+
+#header #navi .menu li:hover {
+  text-decoration: underline;
+}
+
+/* --#mainvisual(index.html)------------------- */
+#mainvisual {
+  top: 100px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#mainvisual video {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#mainvisual .welcome {
+  color: #fff;
+  font-size: 2rem;
+  /* 値: 水平方向 垂直方向 ぼかし 色; */
+  text-shadow: 4px 2px 2px rgb(90, 89, 89);
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  z-index: 40;
+}
+
+/* --#about-this-site-------------- */
+#about-this-site {
+  margin: 200px 0 50px 0;
+}
+
+#about-this-site .about-this-site-sp {
+  display: none;
+}
+
+/* --#profile----------------------- */
+#profile {
+  margin-bottom: 50px;
+}
+
+#profile .profile-sp {
+  display: none;
+}
+
+/* --#work------------------------- */
+#work {
+  margin-bottom: 50px;
+}
+
+#work .list {
+  display: flex;
+  justify-content: space-around;
+}
+
+#work .list .copy-coding {
+  background-color: rgb(224, 247, 140);
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+#work .list .sample {
+  background-color: rgb(250, 227, 211);
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+#work .list .coming-soon {
+  background-color: rgb(90, 89, 89, 0.1);
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+#work .list li {
+  position: relative;
+  font-size: 1.5rem;
+  /* padding: 85px 0;で Coming Soon を上下中央へ */
+  padding: 85px 0;
+  /* 制作物リンク 文字の動き */
+  animation: pulse 1.5s infinite linear;
+}
+
+#work .list li .btn {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  cursor: pointer;
+  /* padding: 85px 0;で模写を上下中央へ */
+  padding: 85px 0;
+}
+
+#work .list li .btn::before {
+  content: "";
+  display: block;
+  background-color: rgb(90, 89, 89);
+  box-shadow: 0 0 2px rgb(90, 89, 89);
+  width: 200px;
+  height: 1px;
+  position: absolute;
+  left: 30px;
+  bottom: 70px;
+}
+
+#work .list li .btn:hover::before {
+  left: 40px;
+}
+
+#work .list li .btn::after {
+  content: "";
+  display: block;
+  background-color: rgb(90, 89, 89);
+  box-shadow: 0 0 2px rgb(90, 89, 89);
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  left: 205px;
+  bottom: 80px;
+  rotate: 45deg;
+}
+
+#work .list li .btn:hover::after {
+  left: 215px;
+}
+
+/* --#blog------------------------- */
+#blog {
+  margin-bottom: 50px;
+}
+
+#blog .list {
+  display: flex;
+  justify-content: space-around;
+}
+
+#blog .list .instagram {
+  position: relative;
+}
+
+#blog .list li a::before {
+  content: "";
+  display: block;
+  background-color: rgb(90, 89, 89);
+  box-shadow: 0 0 2px rgb(90, 89, 89);
+  width: 100px;
+  height: 1px;
+  position: absolute;
+  left: 7px;
+  bottom: -5px;
+}
+
+#blog .list li a:hover::before {
+  left: 14px;
+}
+
+#blog .list li a::after {
+  content: "";
+  display: block;
+  background-color: rgb(90, 89, 89);
+  box-shadow: 0 0 2px rgb(90, 89, 89);
+  width: 15px;
+  height: 1px;
+  position: absolute;
+  left: 95px;
+  bottom: 0;
+  rotate: 45deg;
+}
+
+#blog .list li a:hover::after {
+  left: 102px;
+}
+
+/* --#contact---------------------- */
+#contact {
+  margin-bottom: 50px;
+}
+
+#contact p {
+  margin-bottom: 50px;
+}
+
+#contact a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 400px;
+  position: relative;
+}
+
+#contact a p::before {
+  content: "";
+  display: block;
+  background-color: rgb(90, 89, 89);
+  box-shadow: 0 0 2px rgb(90, 89, 89);
+  width: 250px;
+  height: 1px;
+  position: absolute;
+  left: 111px;
+  bottom: -6px;
+}
+
+#contact a p:hover::before {
+  left: 121px;
+}
+
+#contact a p::after {
+  content: "";
+  display: block;
+  background-color: rgb(90, 89, 89);
+  box-shadow: 0 0 2px rgb(90, 89, 89);
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  left: 335px;
+  bottom: 4px;
+  rotate: 45deg;
+}
+
+#contact a p:hover::after {
+  left: 345px;
+}
+
+#contact a img {
+  width: 50px;
+  margin: 0 10px;
+}
+
+#contact a p {
+  margin: 0 20px;
+}
+
+/* #contactリンク 文字の動き */
+#contact a p {
+  animation: pulse 1.5s infinite linear;
+} 
+
+/* #work　#contact */
+@keyframes pulse {
+  0% {
+    font-size: 1.5rem;
+  }
+  100% {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+
+
+
+/* --レスポンシブ------------------- */
+@media screen and (max-width: 1111px) {
+  p {
+    /*text-align: left;*/
+    line-height: 1.5rem;
+    font-size: 0.825rem;
+  }
+
+  /* --レスポンシブ.section-title--- */
+  .section-title {
+    font-size: 0.825rem;
+    margin-bottom: 25px;
+  }
+
+  .section-title::before,
+  .section-title::after {
+    margin: 0 10px;
+}
+
+  /* --レスポンシブ#header----------- */
+  #header {
+    padding: 0 10px;
+  }
+
+  #header .site-title {
+    font-size: 1rem;
+  }
+
+  #header #navi {
+    display: none;
+  }
+
+  #header #page-top {
+    font-size: 0.825rem;
+    text-decoration: underline;
+  }
+
+  #header .header {
+    margin: 0;
+  }
+
+  #header .link-page-header-menu {
+    flex-direction: column;
+  }
+
+  #header .link-page-header-menu #top-menu {
+    font-size: 0.825rem;
+    margin-right: 0;
+    margin-bottom: 15px;
+    text-decoration: underline;
+  }
+
+
+  /* --レスポンシブ#about-this-site-- */
+  #about-this-site {
+    margin: 150px 0 25px 0;
+  }
+
+  #about-this-site .about-this-site-sp {
+    display: block;
+  }
+
+  #about-this-site .about-this-site-pc {
+    display: none;
+  }
+
+  /* --レスポンシブ#profile---------- */
+  #profile {
+    margin-bottom: 25px;
+  }
+
+  #profile .profile-sp {
+    display: block;
+  }
+
+  #profile .profile-pc {
+    display: none;
+  }
+
+
+  /* --レスポンシブ#work-------------- */
+  #work {
+    margin-bottom: 25px;
+  }
+
+  #work .list {
+    flex-direction: column;
+    align-items:center;
+  }
+
+  #work .list li {
+    margin-bottom: 25px;
+  }
+
+  #work .list li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* --レスポンシブ#blog-------------- */
+  #blog {
+    margin-bottom: 25px;
+  }
+
+  #blog .list {
+    flex-direction: column;
+    align-items:center;
+  }
+
+  /*#blog .list li {
+    margin-bottom: 25px;
+  }*/
+
+  #blog .list li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* 下記 要 SNS が増えたら解除 #blog .list li(レスポンシブ)のコメントアウトも解除すること */
+  #blog .list li.coming-soon {
+    display: none;
+  }
+
+  /* --レスポンシブ#contact----------- */
+  #contact {
+    margin-bottom: 25px;
+  }
+
+  #contact p {
+    text-align: center;
+    font-size: 0.825rem;
+    margin-bottom: 25px;
+  }
+
+  /* --レスポンシブ#footer----------- */
+  #footer .copyright {
+    text-align: center;
+  }
+
+}
