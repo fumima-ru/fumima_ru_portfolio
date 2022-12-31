@@ -8,9 +8,6 @@ body {
   color: rgb(90, 89, 89);
   font-size: 1rem;
   width: 100%;
-  /*font-family: ;*/
-  /* 後で要確認 */
-  
 }
 
 img {
@@ -35,7 +32,8 @@ p {
 /* --.container(ポートフォリオ全ページ)------- */
 .container {
   max-width: 1400px;
-  margin: 15px 15px;
+  /* margin: 15px 15px; */
+  margin: 0 auto;
 }
 
 /* --#header(ポートフォリオ全ページ)----------------------- */
@@ -59,7 +57,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  margin: 0 auto;
 }
 
 #header .site-title {
