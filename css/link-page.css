@@ -123,15 +123,12 @@
 
   .copy-coding-title {
     font-size: 0.925rem;
-    /* margin-bottom: 30px; */
     width: 350px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
   }
 
   .copy-coding-title::before,
   .copy-coding-title::after {
-    /* width: 5%;
-    margin: 0 10px; */
     display: none;
   }
 
