@@ -25,13 +25,11 @@
 
 
 
+
+
 /*--copy-coding.html(css)-----------------*/
 #copy-coding {
   margin-top: 150px;
-}
-
-.copy-codings {
-  margin: 0 auto;
 }
 
 .copy-coding-title {
@@ -53,10 +51,27 @@
   margin: 0 20px;
 }
 
-.copy-codings .list li,
-.copy-codings .list-responsive li {
+.copy-codings .list {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.copy-codings .list-responsive {
+  width: 350px;
+  margin: 0 auto;
+
+}
+
+.copy-codings .list li {
   font-size: 0.925rem;
-  margin: 30px 0 30px 33%;
+  margin: 30px 10px;
+  list-style: inside;
+  text-decoration: underline;
+}
+
+.copy-codings .list-responsive li {
+  font-size: 0.725rem;
+  margin: 30px 10px;
   list-style: inside;
   text-decoration: underline;
 }
@@ -103,27 +118,21 @@
   }
 
   #copy-coding {
-    margin-top: 125px;
-  }
-
-  .copy-codings {
-    margin: 0;
+    margin-top: 140px;
   }
 
   .copy-coding-title {
-    font-size: 0.725rem;
-    margin-bottom: 30px;
+    font-size: 0.925rem;
+    /* margin-bottom: 30px; */
+    width: 350px;
+    /* margin: 0 auto; */
   }
 
   .copy-coding-title::before,
   .copy-coding-title::after {
-    margin: 0 10px;
-  }
-
-  .copy-codings .list li,
-  .copy-codings .list-responsive li {
-    font-size: 0.725rem;
-    margin: 15px 0 30px 10%;
+    /* width: 5%;
+    margin: 0 10px; */
+    display: none;
   }
 
   .copy-codings .list {
