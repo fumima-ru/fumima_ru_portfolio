@@ -31,15 +31,14 @@
 }
 
 .copy-codings {
-  margin: 0 15%;
+  margin: 0 auto;
 }
 
 .copy-coding-title {
   font-weight: normal;
-  text-align: center;
   /* 疑似要素をサイドに移動 */
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   margin-bottom: 50px;
 }
@@ -57,10 +56,9 @@
 .copy-codings .list li,
 .copy-codings .list-responsive li {
   font-size: 0.925rem;
-  margin: 15px 0;
+  margin: 30px 0 30px 33%;
   list-style: inside;
   text-decoration: underline;
-  text-align: left;
 }
 
 .copy-codings .list-responsive {
@@ -94,6 +92,16 @@
 
 @media screen and (max-width: 1111px) {
   /* --レスポンシブ#copy-coding .copy-codings(copy-coding)------ */
+  #header .link-page-header-menu {
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+  }
+
+  #header .link-page-header-menu #top-menu {
+    margin-right: 0;
+  }
+
   #copy-coding {
     margin-top: 125px;
   }
@@ -103,8 +111,8 @@
   }
 
   .copy-coding-title {
-    font-size: 0.925rem;
-    margin-bottom: 25px;
+    font-size: 0.725rem;
+    margin-bottom: 30px;
   }
 
   .copy-coding-title::before,
@@ -114,8 +122,8 @@
 
   .copy-codings .list li,
   .copy-codings .list-responsive li {
-    font-size: 0.825rem;
-    margin: 15px 0;
+    font-size: 0.725rem;
+    margin: 15px 0 30px 10%;
   }
 
   .copy-codings .list {
