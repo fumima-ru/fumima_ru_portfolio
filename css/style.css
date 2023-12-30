@@ -42,7 +42,7 @@ p {
   padding: 0 30px;
   color: rgb(90, 89, 89);
   height: 100px;
-  border-bottom: solid 1px rgb(90, 89, 89);
+  border-bottom: solid 1px rgb(90, 89, 89, 0.5);
   position: fixed;
   top: 0;
   left: 0px;
@@ -110,6 +110,7 @@ p {
   width: 100%;
   height: 100%;
   position: relative;
+  border-bottom: solid 1px rgb(90, 89, 89, 0.5);
 }
 
 #mainvisual video {
