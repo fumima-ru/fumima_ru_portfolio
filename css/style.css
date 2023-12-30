@@ -62,12 +62,12 @@ p {
 
 #header .site-title {
   font-size: 1.25rem;
-  text-shadow: 0 0 2px rgb(90, 89, 89);
+  font-weight: 600;
 }
 
 /* --#navi .menu(ポートフォリオ全ページ)------------ */
 #page-top {
-  text-shadow: 0 0 2px rgb(90, 89, 89);
+  font-weight: 600;
 }
 
 /* --.section-title(index.html)----- */
