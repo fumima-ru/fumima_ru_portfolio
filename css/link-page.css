@@ -2,7 +2,7 @@
 /* --.link-page-header-menu(.link-page)------------ */
 #header .link-page-header-menu {
   display: flex;
-  text-shadow: 0 0 2px rgb(90, 89, 89);
+  font-weight: 600;
 }
 
 #header .link-page-header-menu #top-menu {
@@ -12,7 +12,7 @@
 /* --#header #top-menu(.link-page)------------ */
 #header .link-page-header-menu #top-menu,
 #header .link-page-header-menu #page-top {
-  text-shadow: 0 0 2px rgb(90, 89, 89);
+  font-weight: 600;
 }
 
 #header .link-page-header-menu #page-top:hover,
