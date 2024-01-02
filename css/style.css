@@ -360,11 +360,6 @@ p {
   }
 }
 
-
-
-
-
-
 /* --レスポンシブ------------------- */
 @media screen and (max-width: 1111px) {
   p {
@@ -418,7 +413,6 @@ p {
     text-decoration: underline;
   }
 
-
   /* --レスポンシブ#about-this-site-- */
   #about-this-site {
     margin: 150px 0 25px 0;
@@ -444,7 +438,6 @@ p {
   #profile .profile-pc {
     display: none;
   }
-
 
   /* --レスポンシブ#work-------------- */
   #work {
