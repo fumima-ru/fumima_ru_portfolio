@@ -485,8 +485,13 @@ footer {
     margin-bottom: 25px;
   }
 
-  #contact img,  #contact p {
-    justify-content: center;
+  #contact a {
+    width: 200px;
+  }
+
+  #contact a p::before,
+  #contact a p::after {
+    display: none;
   }
 
   #contact p {
