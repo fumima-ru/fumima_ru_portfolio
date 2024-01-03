@@ -360,6 +360,10 @@ p {
   }
 }
 
+footer {
+  margin-bottom: 10px;
+}
+
 /* --レスポンシブ------------------- */
 @media screen and (max-width: 1111px) {
   p {
@@ -467,15 +471,11 @@ p {
     align-items:center;
   }
 
-  /*#blog .list li {
+  #blog .list li {
     margin-bottom: 25px;
-  }*/
-
-  #blog .list li:last-child {
-    margin-bottom: 0;
   }
 
-  /* 下記 要 SNS が増えたら解除 #blog .list li(レスポンシブ)のコメントアウトも解除すること */
+  /* SNS が増えたら解除する */
   #blog .list li.coming-soon {
     display: none;
   }
@@ -485,15 +485,14 @@ p {
     margin-bottom: 25px;
   }
 
-  #contact p {
-    text-align: center;
-    font-size: 0.825rem;
-    margin-bottom: 25px;
+  #contact img,  #contact p {
+    justify-content: center;
   }
 
-  /* --レスポンシブ#footer----------- */
-  #footer .copyright {
-    text-align: center;
+  #contact p {
+    margin: 0 auto;
+    font-size: 0.825rem;
+    margin-bottom: 25px;
   }
 
 }
