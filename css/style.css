@@ -188,9 +188,8 @@ p {
 #work .list li {
   position: relative;
   font-size: 1.5rem;
-  /* padding: 85px 0;で Coming Soon を上下中央へ */
   padding: 85px 0;
-  /* 制作物リンク 文字の動き */
+  /* 制作物リンクの動き */
   animation: pulse 1.5s infinite linear;
 }
 
@@ -201,7 +200,6 @@ p {
   width:100%;
   height:100%;
   cursor: pointer;
-  /* padding: 85px 0;で模写を上下中央へ */
   padding: 85px 0;
 }
 
@@ -345,7 +343,7 @@ p {
   margin: 0 20px;
 }
 
-/* #contactリンク 文字の動き */
+/* #contactリンクの動き */
 #contact a p {
   animation: pulse 1.5s infinite linear;
 } 
@@ -367,7 +365,6 @@ footer {
 /* --レスポンシブ------------------- */
 @media screen and (max-width: 1111px) {
   p {
-    /*text-align: left;*/
     line-height: 1.5rem;
     font-size: 0.825rem;
   }
