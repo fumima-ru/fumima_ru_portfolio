@@ -1,187 +1,115 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <!-- メタ情報 -->
     <meta charset="UTF-8">
     <title>fumima_ruポートフォリオサイト</title>
-    <meta name="description" content="fumima_ruのポートフォリオサイト">
+    <meta name="description" content="fumima_ruのポートフォリオサイトへようこそ。Webデザインや開発のスキルを学習中で、模写一覧、サンプル作成、運営サイト、SNS活動など、実践的なプロジェクトを通じて学んだ技術を紹介しています。">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ファビコンやアイコンのリンク -->
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" sizes="180x180">
+
+    <!-- スタイルシートのリンク -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-
-    <!--Google Fonts設定-->
-    <link rel=link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-    <!--Font Awesome読み込み-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+    <!-- slickのCSS slickを入れる場合に記述-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.9.0/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <!--css読み込み-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/link-page.css">
+
+    <!-- フォントの読み込み Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     
-    <!--Google の CDNを使用-->
-    <!--(CDNを経由する方法であればjQueryをダウンロードする必要がない)-->
+    <!-- JavaScriptのライブラリ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   </head>
 
   <body>
     <!--#header-------------------------->
     <header id="header">
-      <!-- flexエリア -->
-      <div class="header">
-        <div class="site-title">
-          <a href="index.html">fumima_ru<br>ポートフォリオサイト</a>
+        <div class="header__site_title">
+          <a href="index.html">fumima_ru <span>|</span> ポートフォリオ</a>
         </div>
-
-        <nav id="navi">
-          <!-- flexエリア -->
-          <ul class="menu">
-            <li><a href="#about-this-site">このサイトについて</a></li>
-            <li><a href="#profile">自己紹介</a></li>
-            <li><a href="#work">制作物</a></li>
-            <li><a href="#blog">ブログ</a></li>
-            <li><a href="#contact">お問い合わせ</a></li>
-          </ul>
-        </nav>
-      
-        <div id="page-top">
-          <a href="#">ページトップへ</a>
-        </div>
-      </div>
     </header>
 
-    <!--#mainvisual----------------------------->
-    <div id="mainvisual">
-      <video src="video/fumima_ru_portfolio_mainvisual_pexels_ID_4536559.mp4" loop autoplay muted playsinline></video>
-      <p class="welcome">Thanks for coming.</p>
-    </div>
-
-    <!--main----------------------------->
+    <!--main-------------------------->
     <main>
-      <!--.container------------------------->
-      <div class="container">
-        
-        <!--#about-this-site------------------>
-        <section id="about-this-site">
-          <!-- flexエリア -->
-          <h2 class="section-title">このサイトについて</h2>
-          <div class="about-this-site-pc">
-            <p>
-              fumima_ru (フミマール) のポートフォリオサイトです。<br>Webサイトに関する制作物や日々の活動、学んだこと等をまとめています。
-            </p>
-          </div>
+      <img src="img/fumima_ru_portfolio_hand_fingerprints_blurredimg.png" alt="手の画像">
 
-          <div class="about-this-site-sp">
-            <p>
-              fumima_ru (フミマール) の<br>ポートフォリオサイトです。<br>Webサイトに関する制作物や日々の活動<br>
-              学んだこと等をまとめています。
-            </p>
-          </div>
-        </section>
+      <!--#work----------------------------->
+      <section id="work">
+        <ul class="work__slick_list">
+          <li class="work__slick_list__copy_coding">
+            <a href="fumima_ru_portfolio_copy_coding.html" class="btn">模写一覧</a>
+          </li>
 
-        <!--#profile-------------------------->
-        <section id="profile">
-          <!-- flexエリア -->
-          <h2 class="section-title">自己紹介</h2>
-          <div class="profile-img">
-            <img src="img/fumima_ru_portfolio_profile_img.png" alt="プロフィール画像">
-          </div>
+          <li class="work__slick_list__sample">
+            <a href="fumima_ru_portfolio_sample.html"  class="btn">サンプル作成</a>
+          </li>
 
-          <div class="profile-pc">
-            <p>
-              広島出身。幼少期は愛媛で過ごし社会人になってから大阪にやってきました。<br>
-              お仕事は長い間、飲食店でのウェイトレス業務が中心でした。<br>
-              その後、PCスクールでWordとExcelを学び<br>
-              約２年間、派遣で事務のお仕事をさせていただきました。<br>
-              コロナ禍で派遣契約が早期終了となってしまい<br>
-              働いていた時間でプログラミングの勉強を始め、今に至ります。<br>
-              長年の接客業での経験を生かし<br>
-              訪問して下さる方を、お客様として<br>
-              おもてなし出来るようなサイト作りを心掛けています。<br>
-            </p>
-          </div>
-        
-          <div class="profile-sp">
-            <p>
-              広島出身。<br>
-              幼少期は愛媛で過ごし<br>
-              社会人になってから大阪にやってきました。<br>
-              お仕事は長い間、飲食店でのウェイトレス業務が中心でした。<br>
-              その後、PCスクールでWordとExcelを学び<br>
-              約２年間、派遣で事務のお仕事をさせていただきました。<br>
-              コロナ禍で派遣契約が早期終了となってしまい<br>
-              働いていた時間でプログラミングの勉強を始め、今に至ります。<br>
-              長年の接客業での経験を生かし<br>
-              訪問して下さる方を、お客様として<br>
-              おもてなし出来るようなサイト作りを心掛けています。<br>
-            </p>
-          </div>
-        </section>
+          <li class="work__slick_list__produce">
+            <a href="fumima_ru_portfolio_produce.html"  class="btn">運営サイト</a>
+          </li>
 
-        <!--#work----------------------------->
-        <section id="work">
-          <!-- flexエリア -->
-          <h2 class="section-title">制作物</h2>
-          <!-- flexエリア -->
-          <ul class="list">
-
-            <li class="copy-coding">
-              <a href="fumima_ru_portfolio_copy-coding.html" class="btn">模写一覧</a>
-            </li>
-
-            <li class="sample">
-              <a href="fumima_ru_portfolio_sample.html"  class="btn">サンプル作成</a>
-            </li>
-
-            <li class="produce">
-              <a href="fumima_ru_portfolio_produce.html"  class="btn">運営サイト</a>
-            </li>
-
-          </ul>
-        </section>
-
-        <!--#blog----------------------------->
-        <section id="blog">
-          <!-- flexエリア -->
-          <h2 class="section-title">ブログ</h2>
-          <!-- flexエリア -->
-          <ul class="list">
-            
-            <li class="instagram">
-              <a href="https://www.instagram.com/fumima_ru_pg" target="_blank">Instagram</a>
-            </li>
-
-            <li class="coming-soon">
-              <!--<a href="">-->Coming Soon<!--</a>-->
-            </li>
-
-          </ul>
-        </section>
-
-        <!--#contact-------------------------->
-        <section id="contact">
-          <!-- flexエリア -->
-          <h2 class="section-title">お問い合わせ</h2>
-          <p>お問い合わせはInstagramよりメッセージを送信してください</p>
-          <!-- flexエリア -->
-          <a href="https://www.instagram.com/fumima_ru_pg" target="_blank">
-            <img class="img" src="img/sns_instagram.svg" alt="instagramのロゴ、クリックしてinstagramのプロフィールを見る">
-            
-            <p>Instagram</p>
-          </a>
-          
-        </section>
-      </div>
+          <li class="work__slick_list__sns">
+            <a href="https://www.instagram.com/fumima_ru_pg"  class="btn">SNS</a>
+          </li>
+        </ul>
+      </section>
+    
+      <!--#contact-------------------------->
+      <section id="contact">
+        <p class="contact__message">お問い合わせは上記のSNS（Instagram）よりメッセージを送信してください</p> 
+      </section>
     </main>
-
+    
     <!--#footer--------------------------->
-    <footer id="footer" class="wrapper">
-      <div class="container">
-        <p class="copyright">&copy; fumima_ru</p>
-      </div>
+    <footer id="footer">
+      <p class="footer__copyright">&copy;fumima_ru <span>|</span> last_updated_2024.7.〇
     </footer>
+
+    <script>
+      $(document).ready(function() {
+        function workAreaSlick() {
+          $('.work__slick_list').slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            speed: 1000,
+            cssEase: "linear",
+            arrows: false,
+            centerMode: true,
+            centerPadding: '100px',
+            slidesToShow: 3,
+            responsive: [
+              {
+                breakpoint: 992,
+                settings: {
+                  centerPadding: '50px',
+                  slidesToShow: 3,
+                }
+              },
+              {
+                breakpoint: 576,
+                settings: {
+                  vertical: true,
+                  centerMode: false,
+                  slidesToShow: 4,
+                }
+              }
+            ]
+          });
+        }
+
+        workAreaSlick();
+
+      });
+     
+    </script>
     
   </body>
 </html>
