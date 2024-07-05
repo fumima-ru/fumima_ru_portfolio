@@ -3,11 +3,12 @@
 html {
   font-size: 100%;
 }
-border
+
 body {
   color: rgb(90, 89, 89);
   font-size: 1rem;
   width: 100%;
+  min-width: 320px;
 }
 
 img {
@@ -21,487 +22,250 @@ li {
 a {
   color: rgb(90, 89, 89);
   text-decoration: none;
+  font-weight: 600;
 }
 
 p {
   text-align: center;
   font-size: 1.25rem;
-  line-height: 3rem;
 }
 
-/* --.container(ポートフォリオ全ページ)------- */
-.container {
-  max-width: 1400px;
-  /* margin: 15px 15px; */
-  margin: 0 auto;
+/* --#header----------------------- */
+.header__site_title {
+  margin: 20px;
+  font-size: 3rem;
+  font-weight: 1000;
 }
 
-/* --#header(ポートフォリオ全ページ)----------------------- */
-#header {
-  width: 100%;
-  padding: 0 30px;
-  color: rgb(90, 89, 89);
-  height: 100px;
-  border-bottom: solid 1px rgb(90, 89, 89, 0.5);
-  position: fixed;
-  top: 0;
-  left: 0px;
-  right: 0px;
-  background-color: #fff;
-  z-index: 50;
+.header__site_title span {
+  color: rgb(90, 89, 89, 0.5);
 }
 
-.header {
-  max-width: 1400px;
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-}
-
-#header .site-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-/* --#navi .menu(ポートフォリオ全ページ)------------ */
-#page-top {
-  font-weight: 600;
-}
-
-/* --.section-title(index.html)----- */
-.section-title {
-  font-weight: normal;
-  text-align: center;
-  /* 疑似要素をサイドに移動 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.section-title::before,
-.section-title::after {
-  display: block;
-  content: "";
-  background-color: rgb(90, 89, 89);
-  width: 20%;
-  height: 1px;
-  margin: 0 20px;
-}
-
-/* --#navi .menu(index.html)------------ */
-#header #navi .menu {
-  display: flex;
-}
-
-#header #navi .menu li {
-  margin: 0 30px;
-}
-
-#header #navi .menu li:hover {
-  text-decoration: underline;
-}
-
-/* --#mainvisual(index.html)------------------- */
-#mainvisual {
-  top: 100px;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  border-bottom: solid 1px rgb(90, 89, 89, 0.5);
-}
-
-#mainvisual video {
-  width: 100%;
-  height: 100vh;
-  display: block;
-  object-fit: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-#mainvisual .welcome {
-  color: #fff;
-  font-size: 2rem;
-  /* 値: 水平方向 垂直方向 ぼかし 色; */
-  text-shadow: 4px 2px 2px rgb(90, 89, 89);
+/* --main img（手）----------- */
+main img {
   position: absolute;
-  top: 100px;
-  left: 50px;
-  z-index: 40;
-}
-
-/* --#about-this-site-------------- */
-#about-this-site {
-  margin: 200px 0 50px 0;
-}
-
-#about-this-site .about-this-site-sp {
-  display: none;
-}
-
-/* --#profile----------------------- */
-#profile {
-  margin-bottom: 50px;
-}
-
-#profile .profile-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin: 0 auto 20px auto;
-}
-
-#profile .profile-sp {
-  display: none;
+  bottom: 10%;
+  right: 0;
+  max-width: 1200px;
+  z-index: -1;
 }
 
 /* --#work------------------------- */
 #work {
-  margin-bottom: 50px;
+  margin-top: 100px;
 }
 
-#work .list {
-  display: flex;
-  justify-content: space-around;
-}
-
-#work .list .copy-coding {
-  background-color: rgb(189, 236, 182);
-  width: 200px;
-  height: 200px;
+.work__slick_list__copy_coding {
+  background-color: rgb(241, 141, 158);
+  width: 400px !important;
+  height: 400px !important;
   text-align: center;
   border-radius: 50%;
 }
 
-#work .list .sample {
-  background-color: rgb(255, 203, 164);
-  width: 200px;
-  height: 200px;
+.work__slick_list__sample {
+  background-color: rgb(163, 193, 255);
+  width: 400px !important;
+  height: 400px !important;
   text-align: center;
   border-radius: 50%;
 }
 
-#work .list .produce {
-  background-color: rgb(153, 204, 255);
-  width: 200px;
-  height: 200px;
+.work__slick_list__produce {
+  background-color: rgb(91, 200, 172);
+  width: 400px !important;
+  height: 400px !important;
   text-align: center;
   border-radius: 50%;
 }
 
-#work .list li {
+.work__slick_list__sns {
+  background-color: rgb(230, 215, 42);
+  width: 400px !important;
+  height: 400px !important;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.work__slick_list li {
   position: relative;
-  font-size: 1.5rem;
-  padding: 85px 0;
-  /* 制作物リンクの動き */
-  animation: pulse 1.5s infinite linear;
 }
 
-#work .list li .btn {
+.work__slick_list li .btn {
   position: absolute;
   top:0;
   left:0;
   width:100%;
   height:100%;
   cursor: pointer;
-  padding: 85px 0;
-}
-
-#work .list li .btn::before {
-  content: "";
-  display: block;
-  background-color: rgb(90, 89, 89);
-  box-shadow: 0 0 2px rgb(90, 89, 89);
-  width: 200px;
-  height: 1px;
-  position: absolute;
-  left: 30px;
-  bottom: 70px;
-}
-
-#work .list li .btn:hover::before {
-  left: 40px;
-}
-
-#work .list li .btn::after {
-  content: "";
-  display: block;
-  background-color: rgb(90, 89, 89);
-  box-shadow: 0 0 2px rgb(90, 89, 89);
-  width: 30px;
-  height: 1px;
-  position: absolute;
-  left: 205px;
-  bottom: 80px;
-  rotate: 45deg;
-}
-
-#work .list li .btn:hover::after {
-  left: 215px;
-}
-
-/* --#blog------------------------- */
-#blog {
-  margin-bottom: 50px;
-}
-
-#blog .list {
-  display: flex;
-  justify-content: space-around;
-}
-
-#blog .list .instagram {
-  position: relative;
-}
-
-#blog .list li a::before {
-  content: "";
-  display: block;
-  background-color: rgb(90, 89, 89);
-  box-shadow: 0 0 2px rgb(90, 89, 89);
-  width: 100px;
-  height: 1px;
-  position: absolute;
-  left: 7px;
-  bottom: -5px;
-}
-
-#blog .list li a:hover::before {
-  left: 14px;
-}
-
-#blog .list li a::after {
-  content: "";
-  display: block;
-  background-color: rgb(90, 89, 89);
-  box-shadow: 0 0 2px rgb(90, 89, 89);
-  width: 15px;
-  height: 1px;
-  position: absolute;
-  left: 95px;
-  bottom: 0;
-  rotate: 45deg;
-}
-
-#blog .list li a:hover::after {
-  left: 102px;
+  padding: 175px 0;
+  font-size: 3rem;
 }
 
 /* --#contact---------------------- */
-#contact {
-  margin-bottom: 50px;
-}
-
-#contact p {
-  margin-bottom: 50px;
-}
-
-#contact a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 400px;
-  position: relative;
-}
-
-#contact a p::before {
-  content: "";
-  display: block;
-  background-color: rgb(90, 89, 89);
-  box-shadow: 0 0 2px rgb(90, 89, 89);
-  width: 250px;
-  height: 1px;
+.contact__message {
   position: absolute;
-  left: 111px;
-  bottom: -6px;
+  bottom: 50px;
+  right: 0;
+  left: 0;
+  display: inline-block;
+  background-color: rgb(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
-#contact a p:hover::before {
-  left: 121px;
-}
-
-#contact a p::after {
-  content: "";
-  display: block;
-  background-color: rgb(90, 89, 89);
-  box-shadow: 0 0 2px rgb(90, 89, 89);
-  width: 30px;
-  height: 1px;
+/* --#footer---------------------- */
+#footer {
   position: absolute;
-  left: 335px;
-  bottom: 4px;
-  rotate: 45deg;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  font-weight: 600;
 }
 
-#contact a p:hover::after {
-  left: 345px;
+.footer__copyright span {
+  color: rgb(90, 89, 89, 0.5);
 }
 
-#contact a img {
-  width: 50px;
-  margin: 0 10px;
+/* --レスポンシブ 1600px------------------- */
+@media screen and (max-width: 1600px) {
+  /* --レスポンシブ #work-------------- */
+  .work__slick_list__copy_coding,
+  .work__slick_list__sample,
+  .work__slick_list__produce,
+  .work__slick_list__sns {
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .work__slick_list li .btn {
+    padding: 135px 0;
+    font-size: 2rem;
+  }
 }
 
-#contact a p {
-  margin: 0 20px;
-}
 
-/* #contactリンクの動き */
-#contact a p {
-  animation: pulse 1.5s infinite linear;
-} 
+/* --レスポンシブ 1200px------------------- */
+@media screen and (max-width: 1200px) {
+  /* --レスポンシブ #work-------------- */
+  .work__slick_list__copy_coding,
+  .work__slick_list__sample,
+  .work__slick_list__produce,
+  .work__slick_list__sns {
+    width: 200px !important;
+    height: 200px !important;
+  }
 
-/* #work　#contact */
-@keyframes pulse {
-  0% {
+  .work__slick_list li .btn {
+    padding: 85px 0;
     font-size: 1.5rem;
   }
-  100% {
-    font-size: 1.6rem;
+}
+
+
+/* --レスポンシブ 992px------------------- */
+@media screen and (max-width: 992px) {
+  /* --レスポンシブ main img（手）----------- */
+  main img {
+    max-width: 800px;
   }
 }
 
-footer {
-  margin-bottom: 10px;
-}
 
-/* --レスポンシブ------------------- */
-@media screen and (max-width: 1111px) {
-  p {
-    line-height: 1.5rem;
-    font-size: 0.825rem;
+/* --レスポンシブ 768px------------------- */
+@media screen and (max-width: 768px) {
+  /* --レスポンシブ #header----------------------- */
+  .header__site_title {
+    font-size: 2rem;
   }
 
-  /* --レスポンシブ.section-title--- */
-  .section-title {
-    font-size: 0.825rem;
-    margin-bottom: 25px;
+  /* --レスポンシブ #work-------------- */
+  .work__slick_list__copy_coding,
+  .work__slick_list__sample,
+  .work__slick_list__produce,
+  .work__slick_list__sns {
+    width: 150px !important;
+    height: 150px !important;
   }
 
-  .section-title::before,
-  .section-title::after {
-    margin: 0 10px;
-}
-
-  /* --レスポンシブ#header----------- */
-  #header {
-    padding: 0 10px;
-  }
-
-  #header .site-title {
+  .work__slick_list li .btn {
+    padding: 65px 0;
     font-size: 1rem;
-    line-height: 2rem;
   }
 
-  #header #navi {
-    display: none;
+  /* --レスポンシブ #contact---------------------- */
+  .contact__message {
+    bottom: 30px;
+    font-size: 0.9rem;
   }
 
-  #header #page-top {
-    font-size: 0.825rem;
-    text-decoration: underline;
+  /* --レスポンシブ #footer---------------------- */
+  .footer__copyright {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* --レスポンシブ 576px------------------- */
+@media screen and (max-width: 576px) {
+  /* --レスポンシブ #header----------------------- */
+  .header__site_title {
+    font-size: 1.1rem;
+    text-align: center;
   }
 
-  #header .header {
-    margin: 0;
+  /* --レスポンシブ main img（手）----------- */
+  main img {
+    position: fixed;
+    bottom: 150px;
+    max-width: 400px;
   }
 
-  #header .link-page-header-menu {
-    flex-direction: column;
-  }
-
-  #header .link-page-header-menu #top-menu {
-    font-size: 0.825rem;
-    margin-right: 0;
-    margin-bottom: 15px;
-    text-decoration: underline;
-  }
-
-  /* --レスポンシブ#about-this-site-- */
-  #about-this-site {
-    margin: 150px 0 25px 0;
-  }
-
-  #about-this-site .about-this-site-sp {
-    display: block;
-  }
-
-  #about-this-site .about-this-site-pc {
-    display: none;
-  }
-
-  /* --レスポンシブ#profile---------- */
-  #profile {
-    margin-bottom: 25px;
-  }
-
-  #profile .profile-sp {
-    display: block;
-  }
-
-  #profile .profile-pc {
-    display: none;
-  }
-
-  /* --レスポンシブ#work-------------- */
+  /* --レスポンシブ #work-------------- */
   #work {
-    margin-bottom: 25px;
+    margin-top: 20px;
   }
 
-  #work .list {
-    flex-direction: column;
-    align-items:center;
+  .work__slick_list__copy_coding,
+  .work__slick_list__sample,
+  .work__slick_list__produce,
+  .work__slick_list__sns {
+    width: 200px !important;
+    height: 200px !important;
   }
 
-  #work .list li {
-    margin-bottom: 25px;
+  .work__slick_list li {
+    margin: 20px 0 20px 60px;
   }
 
-  #work .list li:last-child {
-    margin-bottom: 0;
+  .work__slick_list li .btn {
+    padding: 85px 0;
+    font-size: 1.5rem;
   }
 
-  /* --レスポンシブ#blog-------------- */
-  #blog {
-    margin-bottom: 25px;
-  }
-
-  #blog .list {
-    flex-direction: column;
-    align-items:center;
-  }
-
-  #blog .list li {
-    margin-bottom: 25px;
-  }
-
-  /* SNS が増えたら解除する */
-  #blog .list li.coming-soon {
-    display: none;
-  }
-
-  /* --レスポンシブ#contact----------- */
+  /* --レスポンシブ #contact---------------------- */
   #contact {
-    margin-bottom: 25px;
+    text-align: center;
   }
 
-  #contact a {
-    width: 200px;
+  .contact__message {
+    position: static;
+    text-align: center;
+    font-size: 0.75rem;
+    white-space: normal;
   }
 
-  #contact a p::before,
-  #contact a p::after {
-    display: none;
+  /* --レスポンシブ #footer---------------------- */
+  #footer {
+    position: static;
+    margin-top: 10px;
+    font-size: 0.75rem;
   }
 
-  #contact p {
-    margin: 0 auto;
-    font-size: 0.825rem;
-    margin-bottom: 25px;
+  .footer__copyright {
+    font-size: 0.75rem;
+    margin-bottom: 10px;
   }
-
 }
