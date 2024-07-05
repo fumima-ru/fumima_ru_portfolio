@@ -173,6 +173,7 @@ main img {
   }
 }
 
+
 /* --レスポンシブ 768px------------------- */
 @media screen and (max-width: 768px) {
   /* --レスポンシブ #header----------------------- */
@@ -205,6 +206,7 @@ main img {
     font-size: 0.9rem;
   }
 }
+
 
 /* --レスポンシブ 576px------------------- */
 @media screen and (max-width: 576px) {
