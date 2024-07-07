@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: rgb(90, 89, 89);
+  font-size: 1rem;
+  width: 100%;
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: rgb(90, 89, 89);
+  text-decoration: none;
+}
+
+p {
+  text-align: center;
+}
+
+/*--#header-----------------*/
+#header {
+  width: 100%;
+}
+
+.header__page_title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.header__message {
+  margin-top: 30px;
+}
+
+/*--#copy_coding-----------------*/
+#copy_coding {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.copy_coding__list {
+  padding: 0 30px;
+}
+
+.copy_coding__list li {
+  display: inline-block;
+  font-size: 0.925rem;
+  font-weight: 600;
+  margin: 10px 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.copy_coding__list__introduction {
+  background-color: rgb(230, 215, 42, 0.2);
+}
+
+.copy_coding__list__beginner {
+  background-color: rgb(91, 200, 172, 0.2);
+}
+
+.copy_coding__list__intermediate {
+  background-color: rgb(241, 141, 158, 0.2);
+}
+
+.copy_coding__list__advanced {
+  background-color: rgb(163, 193, 255, 0.2);
+}
+
+.copy_coding__list__introduction__1:hover,
+.copy_coding__list__introduction__2:hover,
+.copy_coding__list__introduction__3:hover,
+.copy_coding__list__introduction__4:hover,
+.copy_coding__list__introduction__5:hover,
+.copy_coding__list__introduction__6:hover,
+.copy_coding__list__beginner__1:hover,
+.copy_coding__list__beginner__2:hover,
+.copy_coding__list__beginner__3:hover,
+.copy_coding__list__beginner__4:hover,
+.copy_coding__list__beginner__5:hover,
+.copy_coding__list__intermediate__1:hover,
+.copy_coding__list__intermediate__2:hover,
+.copy_coding__list__intermediate__3:hover,
+.copy_coding__list__intermediate__4:hover,
+.copy_coding__list__intermediate__5:hover,
+.copy_coding__list__advanced__1:hover,
+.copy_coding__list__advanced__2:hover {
+  color: black;
+}
+
+/*--#footer-----------------*/
+#footer {
+  margin-bottom: 20px;
+}
+
+
+ /* --レスポンシブ 576px--------------- */
+@media screen and (max-width: 576px) {
+  .header__page_title {
+    margin-top: 20px;
+  }
+  
+  .header__message {
+    margin: 20px 10px 0 10px;
+    font-size: 0.8rem;
+  }
+
+  #copy_coding {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .copy_coding__list {
+    padding: 0 10px;
+  }
+
+  .footer__copyright {
+    font-size: 0.8rem;
+  }
+}
