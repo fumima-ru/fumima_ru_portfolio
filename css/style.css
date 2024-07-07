@@ -91,6 +91,10 @@ main img {
   position: relative;
 }
 
+.work__slick_list li:hover {
+  opacity: 0.8;
+}
+
 .work__slick_list li .btn {
   position: absolute;
   top:0;
