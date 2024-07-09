@@ -3,8 +3,8 @@
   <head>
     <!-- メタ情報 -->
     <meta charset="UTF-8">
-    <title>fumima_ruポートフォリオサイト</title>
-    <meta name="description" content="fumima_ruのポートフォリオサイトへようこそ。Webデザインや開発のスキルを学習中で、模写一覧、サンプル作成、運営サイト、SNS活動など、実践的なプロジェクトを通じて学んだ技術を紹介しています。">
+    <title>fumima_ruポートフォリオ</title>
+    <meta name="description" content="fumima_ru（フミマール）のポートフォリオ（Webサイト）へようこそ。Webデザインや開発のスキルを学習中で、模写一覧、サンプル作成、運営サイト、SNS活動など、実践的なプロジェクトを通じて学んだ技術を紹介しています。">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- ファビコンやアイコンのリンク -->
@@ -13,13 +13,13 @@
 
     <!-- スタイルシートのリンク -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <!-- slickのCSS slickを入れる場合に記述-->
+    <!-- slickのCSS slickを入れる場合に記述 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.9.0/slick/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-    <!--css読み込み-->
+    <!-- css読み込み -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- フォントの読み込み Google Fonts-->
+    <!-- フォントの読み込み Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -39,29 +39,34 @@
 
     <!--main-------------------------->
     <main>
-      <img src="img/portfolio_hand_fingerprints_blurredimg.png" alt="手の画像">
+      <div class="container">
+        <!--#work----------------------------->
+        <section id="work">
+          <ul class="work__ul">
+            <li class="work__slick_list work__slick_list__copy_coding">
+              <a href="portfolio_copy_coding.html" class="btn">模写一覧</a>
+            </li>
 
-      <!--#work----------------------------->
-      <section id="work">
-        <ul class="work__slick_list">
-          <li class="work__slick_list__copy_coding">
-            <a href="portfolio_copy_coding.html" class="btn">模写一覧</a>
-          </li>
+            <li class="work__slick_list work__slick_list__sample">
+              <a href="portfolio_sample.html"  class="btn">サンプル一覧</a>
+            </li>
 
-          <li class="work__slick_list__sample">
-            <a href="portfolio_sample.html"  class="btn">サンプル作成</a>
-          </li>
+            <li class="work__slick_list work__slick_list__produce">
+              <a href="portfolio_produce.html"  class="btn">運営サイト一覧</a>
+            </li>
 
-          <li class="work__slick_list__produce">
-            <a href="portfolio_produce.html"  class="btn">運営サイト</a>
-          </li>
+            <li class="work__slick_list work__slick_list__sns">
+              <a href="https://www.instagram.com/fumima_ru_pg"  class="btn">SNS</a>
+            </li>
 
-          <li class="work__slick_list__sns">
-            <a href="https://www.instagram.com/fumima_ru_pg"  class="btn">SNS</a>
-          </li>
-        </ul>
-      </section>
-    
+            <li class="work__slick_list work__slick_list__steps">
+              <a href="" class="btn">これまでの歩み<br><span>～準備中～</span></a>
+            </li>
+          </ul>
+        </section>
+        <img src="img/portfolio_hand.png" alt="手の画像">
+      </div>
+
       <!--#contact-------------------------->
       <section id="contact">
         <p class="contact__message">お問い合わせは上記のSNS（Instagram）よりメッセージを送信してください</p> 
@@ -70,13 +75,13 @@
     
     <!--#footer--------------------------->
     <footer id="footer">
-      <p class="footer__copyright">&copy;fumima_ru <span>|</span> last_updated_2024.7.〇</p> 
+      <p class="footer__copyright">&copy;fumima_ru <span>|</span> last_updated_2024.7.9</p> 
     </footer>
 
     <script>
       $(document).ready(function() {
         function workAreaSlick() {
-          $('.work__slick_list').slick({
+          $('.work__ul').slick({
             autoplay: true,
             autoplaySpeed: 2000,
             speed: 1000,
@@ -98,7 +103,7 @@
                 settings: {
                   vertical: true,
                   centerMode: false,
-                  slidesToShow: 4,
+                  slidesToShow: 5,
                 }
               }
             ]

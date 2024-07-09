@@ -1,87 +1,63 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <!-- メタ情報 -->
     <meta charset="UTF-8">
-    <title>fumima_ruポートフォリオサイト</title>
-    <meta name="description" content="fumima_ruのポートフォリオサイト">
+    <title>fumima_ruポートフォリオ | HTML、CSS、JavaScript運営サイト一覧</title>
+    <meta name="description" content="fumima_ru（フミマール）のポートフォリオ（Webサイト）です。HTML、CSS、JavaScriptを使用して作成した運営サイト一覧です。気に入ったものがあれば自由にご利用ください。">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 
-    <!--Google Fonts設定-->
-    <link rel=link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- ファビコンやアイコンのリンク -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" sizes="180x180">
+
+    <!-- スタイルシートのリンク -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- css読み込み -->
+    <link rel="stylesheet" href="css/portfolio_grid_layout.css">
+
+    <!-- フォントの読み込み Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-    <!--Font Awesome読み込み-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-    <!--css読み込み-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/link-page.css">
-
-    <!--Google の CDNを使用-->
-    <!--(CDNを経由する方法であればjQueryをダウンロードする必要がない)-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body>
     <!--#header-------------------------->
     <header id="header">
-      <div class="header">
-        <div class="site-title">
-          <a href="index.html">fumima_ru<br>ポートフォリオサイト</a>
-        </div>
-        <!-- flexエリア -->
-        <div class="link-page-header-menu">
-          <div id="top-menu">
-            <a href="index.html">トップメニューへ</a>
-          </div>
-
-          <div id="page-top">
-            <a href="#">ページトップへ</a>
-          </div>
-        </div>
+      <div class="header__page_title">
+        <h1><a href="portfolio_sample.html">運営サイト一覧</a></h1>
+        <p class="header__message">
+          HTML、CSS、JavaScriptを使用して作成した運営サイト一覧です。気に入ったものがあれば自由にご利用ください。
+        </p>
       </div>
     </header>
+
     <!--main----------------------------->
     <main>
-      <div class="container">
-        <section id="square-list">
-          <div class="square-lists">
-            <h2 class="square-list-title">運営サイト一覧</h2>
-            <ul class="square-list-li">
-              <li>
-                <a href="pbf_bmi.html">
-                  <img src="img/pbf_bmi.png" alt="BMI計算サイトのロゴ、クリックしてBMI計算サイトを開く" class="border-solid-img">
-                  <p>BMI計算</p>
-                </a>
-              </li>
-              <li>
-                <a href="pbf_alphabet_conversion.html">
-                  <img src="img/pbf_alphabet_conversion.png" alt="大文字・小文字変換サイトのロゴ、クリックして大文字・小文字変換サイトを開く" class="border-solid-img">
-                  <p>大文字・小文字変換</p>
-                </a>
-              </li>
-              <!-- 下記のliは運営サイトを追加する際に使用 -->
-              <li><a href=""><img src="" alt=""></a></li>
-              <li><a href=""><img src="" alt=""></a></li>
-              <li><a href=""><img src="" alt=""></a></li>
-              <li><a href=""><img src="" alt=""></a></li>
-              <li><a href=""><img src="" alt=""></a></li>
-              <li><a href=""><img src="" alt=""></a></li>
-            </ul>
-          </div>
-        </section>
-      </div>
+      <section id="square_area">
+        <ul class="square_area__ul">
+          <li class="square_area__ul__list">
+            <a href="produce_bmi.html">
+              <img class="square_area__ul__list__outer_frame" src="img/portfolio_bmi.png" alt="BMI計算サイトのロゴ、クリックしてBMI計算サイトを開く">
+              <p class="square_area__ul__list__title">BMI計算</p>
+            </a>
+          </li>
+          <li class="square_area__ul__list">
+            <a href="produce_alphabet_conversion.html">
+              <img class="square_area__ul__list__outer_frame" src="img/portfolio_alphabet_conversion.png" alt="大文字・小文字変換サイトのロゴ、クリックして大文字・小文字変換サイトを開く">
+              <p class="square_area__ul__list__title">文字変換<br>アルファベット</p>
+            </a>
+          </li>
+          <!-- 下記の<li></li>は配置のために記述 -->
+          <li class="square_area__ul__list"><a href=""><img src="" alt=""><p class="square_area__ul__list__title"></p></a></li>
+        </ul>
+      </section>
     </main>
 
     <!--#footer--------------------------->
-    <footer id="footer" class="wrapper">
-      <div class="container">
-        <p class="copyright">&copy; fumima_ru</p>
-      </div>
+    <footer id="footer">
+      <p class="footer__copyright">&copy;fumima_ru <span>|</span> last_updated_2024.7.9</p> 
     </footer>
   </body>
-
 </html>

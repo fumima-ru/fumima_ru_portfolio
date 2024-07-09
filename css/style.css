@@ -41,61 +41,23 @@ p {
   color: rgb(90, 89, 89, 0.5);
 }
 
-/* --main img（手）----------- */
-main img {
-  position: absolute;
-  bottom: 10%;
-  right: 0;
-  max-width: 1200px;
-  z-index: -1;
-}
-
-/* --#work------------------------- */
-#work {
+/* --.container----------------------- */
+.container {
+  position: relative;
+  height: 900px;
   margin-top: 100px;
 }
 
-.work__slick_list__copy_coding {
-  background-color: rgb(241, 141, 158);
-  width: 400px !important;
-  height: 400px !important;
-  text-align: center;
-  border-radius: 50%;
-}
-
-.work__slick_list__sample {
-  background-color: rgb(163, 193, 255);
-  width: 400px !important;
-  height: 400px !important;
-  text-align: center;
-  border-radius: 50%;
-}
-
-.work__slick_list__produce {
-  background-color: rgb(91, 200, 172);
-  width: 400px !important;
-  height: 400px !important;
-  text-align: center;
-  border-radius: 50%;
-}
-
-.work__slick_list__sns {
-  background-color: rgb(230, 215, 42);
-  width: 400px !important;
-  height: 400px !important;
-  text-align: center;
-  border-radius: 50%;
-}
-
-.work__slick_list li {
+/* --#work------------------------- */
+.work__ul li {
   position: relative;
 }
 
-.work__slick_list li:hover {
+.work__ul li:hover {
   opacity: 0.8;
 }
 
-.work__slick_list li .btn {
+.work__ul li .btn {
   position: absolute;
   top:0;
   left:0;
@@ -106,18 +68,62 @@ main img {
   font-size: 3rem;
 }
 
+.work__slick_list {
+  width: 400px !important;
+  height: 400px !important;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.work__slick_list__copy_coding {
+  background-color: rgb(241, 141, 158);
+}
+
+.work__slick_list__sample {
+  background-color: rgb(163, 193, 255);
+}
+
+.work__slick_list__produce {
+  background-color: rgb(91, 200, 172);
+}
+
+.work__slick_list__sns {
+  background-color: rgb(230, 215, 42);
+}
+
+.work__slick_list__steps {
+  background-color: rgb(200, 200, 200);
+  pointer-events: none;
+}
+
+.work__slick_list__steps span {
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+
+/* --main img（手）----------- */
+main img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 1200px;
+  z-index: -1;
+}
+
 /* --#contact---------------------- */
 .contact__message {
   position: absolute;
   bottom: 50px;
   right: 0;
   left: 0;
-  display: inline-block;
-  background-color: rgb(255, 255, 255, 0.5);
-  padding: 10px;
-  border-radius: 20px;
   font-weight: 600;
+  display: inline-block;
+  background-color: rgb(255, 255, 255, 0.7);
+  padding: 5px;
+  border-radius: 5px;
   white-space: nowrap;
+  width:fit-content;
+  margin: 0 auto;
 }
 
 /* --#footer---------------------- */
@@ -127,6 +133,12 @@ main img {
   right: 0;
   left: 0;
   font-weight: 600;
+  background-color: rgb(255, 255, 255, 0.7);
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  width:fit-content;
+  margin: 0 auto;
 }
 
 .footer__copyright span {
@@ -135,18 +147,44 @@ main img {
 
 /* --レスポンシブ 1600px------------------- */
 @media screen and (max-width: 1600px) {
+  .container {
+    height: 600px;
+  }
+
+  /* --レスポンシブ main img（手）----------- */
+  main img {
+    max-width: 700px;
+  }
+
   /* --レスポンシブ #work-------------- */
-  .work__slick_list__copy_coding,
-  .work__slick_list__sample,
-  .work__slick_list__produce,
-  .work__slick_list__sns {
+  .work__ul li .btn {
+    padding: 135px 0;
+    font-size: 2rem;
+  }
+
+  .work__slick_list {
     width: 300px !important;
     height: 300px !important;
   }
 
-  .work__slick_list li .btn {
-    padding: 135px 0;
-    font-size: 2rem;
+  #contact {
+    text-align: center;
+  }
+
+  .contact__message {
+    position: static;
+    margin-top: 100px;
+    text-align: center;
+    white-space: normal;
+  }
+
+  #footer {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .footer__copyright {
+    margin-bottom: 10px;
   }
 }
 
@@ -154,29 +192,21 @@ main img {
 /* --レスポンシブ 1200px------------------- */
 @media screen and (max-width: 1200px) {
   /* --レスポンシブ #work-------------- */
-  .work__slick_list__copy_coding,
-  .work__slick_list__sample,
-  .work__slick_list__produce,
-  .work__slick_list__sns {
+  .work__ul li .btn {
+    padding: 85px 0;
+    font-size: 1.5rem;
+  }
+
+  .work__slick_list {
     width: 200px !important;
     height: 200px !important;
   }
 
-  .work__slick_list li .btn {
-    padding: 85px 0;
-    font-size: 1.5rem;
+  .work__slick_list__steps span {
+    font-size: 1rem;
+    opacity: 0.5;
   }
 }
-
-
-/* --レスポンシブ 992px------------------- */
-@media screen and (max-width: 992px) {
-  /* --レスポンシブ main img（手）----------- */
-  main img {
-    max-width: 800px;
-  }
-}
-
 
 /* --レスポンシブ 768px------------------- */
 @media screen and (max-width: 768px) {
@@ -185,29 +215,30 @@ main img {
     font-size: 2rem;
   }
 
-  /* --レスポンシブ #work-------------- */
-  .work__slick_list__copy_coding,
-  .work__slick_list__sample,
-  .work__slick_list__produce,
-  .work__slick_list__sns {
-    width: 150px !important;
-    height: 150px !important;
+  /* --レスポンシブ .container----------------------- */
+  .container {
+    height: 550px;
   }
 
-  .work__slick_list li .btn {
+  /* --レスポンシブ #work-------------- */
+  .work__ul li .btn {
     padding: 65px 0;
     font-size: 1rem;
   }
 
+  .work__slick_list {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
   /* --レスポンシブ #contact---------------------- */
   .contact__message {
-    bottom: 30px;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   /* --レスポンシブ #footer---------------------- */
   .footer__copyright {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
@@ -220,56 +251,39 @@ main img {
     text-align: center;
   }
 
-  /* --レスポンシブ main img（手）----------- */
-  main img {
-    position: fixed;
-    bottom: 150px;
-    max-width: 400px;
+  /* --レスポンシブ .container----------------------- */
+  .container {
+    height: 1450px;
   }
 
   /* --レスポンシブ #work-------------- */
-  #work {
-    margin-top: 20px;
-  }
-
-  .work__slick_list__copy_coding,
-  .work__slick_list__sample,
-  .work__slick_list__produce,
-  .work__slick_list__sns {
-    width: 200px !important;
-    height: 200px !important;
-  }
-
-  .work__slick_list li {
+  .work__ul li {
     margin: 20px 0 20px 60px;
   }
 
-  .work__slick_list li .btn {
+  .work__ul li .btn {
     padding: 85px 0;
     font-size: 1.5rem;
   }
 
-  /* --レスポンシブ #contact---------------------- */
-  #contact {
-    text-align: center;
+  .work__slick_list {
+    width: 200px !important;
+    height: 200px !important;
   }
 
+  /* --レスポンシブ main img（手）----------- */
+  main img {
+    max-width: 400px;
+  }
+
+  /* --レスポンシブ #contact---------------------- */
   .contact__message {
-    position: static;
-    text-align: center;
+    margin-top: 40px;
     font-size: 0.75rem;
-    white-space: normal;
   }
 
   /* --レスポンシブ #footer---------------------- */
-  #footer {
-    position: static;
-    margin-top: 10px;
-    font-size: 0.75rem;
-  }
-
   .footer__copyright {
     font-size: 0.75rem;
-    margin-bottom: 10px;
   }
 }
