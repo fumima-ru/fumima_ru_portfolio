@@ -1,94 +1,81 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <!-- メタ情報 -->
     <meta charset="UTF-8">
-    <title>fumima_ruポートフォリオサイト</title>
-    <meta name="description" content="fumima_ruのポートフォリオサイト">
+    <title>fumima_ruポートフォリオ | HTML、CSS、JavaScript、GIMPサンプル一覧</title>
+    <meta name="description" content="fumima_ru（フミマール）のポートフォリオポートフォリオ（Webサイト）です。HTML、CSS、JavaScript、GIMPを使用し、マール島のお店、施設、イベントのWebページや告知物をサンプルとして作成しています。今後、他のデザインツールも使用予定です。※マール島は架空の島です。">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 
-    <!--Google Fonts設定-->
-    <link rel=link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- ファビコンやアイコンのリンク -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" sizes="180x180">
+
+    <!-- スタイルシートのリンク -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- css読み込み -->
+    <link rel="stylesheet" href="css/portfolio_grid_layout.css">
+
+    <!-- フォントの読み込み Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-    <!--Font Awesome読み込み-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-    <!--css読み込み-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/link-page.css">
-
-    <!--Google の CDNを使用-->
-    <!--(CDNを経由する方法であればjQueryをダウンロードする必要がない)-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body>
     <!--#header-------------------------->
     <header id="header">
-      <div class="header">
-        <div class="site-title">
-          <a href="index.html">fumima_ru<br>ポートフォリオサイト</a>
-        </div>
+      <div class="header__page_title">
+        <h1><a href="portfolio_sample.html">サンプル一覧</a></h1>
+        <p class="header__message">
+          HTML、CSS、JavaScript、GIMPを使用し、マール島のお店、施設、イベントのWebページや告知物をサンプルとして作成しています。今後、他のデザインツールも使用予定です。※マール島は架空の島です。
+        </p>
       </div>
     </header>
+
     <!--main----------------------------->
     <main>
-      <div class="container">
-        <section id="square-list">
-          <div class="square-lists">
-            <h2 class="square-list-title">サンプル一覧</h2>
-            <ul class="square-list-li">
-              <li>
-                <a href="sample_cafe1.html">
-                  <img src="img/fumima_ru_portfolio_sample_cafe1.png" alt="カフェのサンプルページへのリンク、クリックしてカフェのデザインを見る">
-                  <p>カフェ（Webサイト）</p>
-                </a>
-              </li>
-              <li>
-                <a href="sample_spice_herb_recipe1.html">
-                  <img src="img/fumima_ru_portfolio_sample_spice_herb_recipe1.png" alt="料理レシピのサンプルページへのリンク、クリックして料理レシピのデザインを見る">
-                  <p>料理レシピ（Webサイト）</p>
-                </a>
-              </li>
-              <!-- 下記のliはサンプルを追加する際に使用 -->
-              <li>
-                <a href="sample_ma_ru_ferries.html">
-                  <img src="img/fumima_ru_portfolio_sample_ma_ru_ferries.png" alt="フェリー会社のサンプルページへのリンク、クリックしてフェリー会社のデザインを見る">
-                  <p>〇フェリー（Webサイト）</p>
-                </a>
-              </li>
-              <li>
-                <a href="sample_ume_flower_festival.html">
-                  <img src="img/fumima_ru_portfolio_sample_ume_flower_festival.png" alt="梅まつりのサンプルページへのリンク、クリックして梅まつりのデザインを見る">
-                  <p>〇庭園 梅まつり（Webサイト）</p>
-                </a>
-              </li>
-              <li>
-                <a href="sample_fireworks_festival_flyer.html">
-                  <img src="img/sample_fireworks_festival_flyer.png" alt="花火大会のチラシを掲載したサンプルページへのリンク、クリックして花火大会のチラシのデザインを見る">
-                  <p>〇島 夏祭り 花火大会（チラシ）</p>
-                </a>
-              </li>
-
-              <li><a href=""><img src="" alt=""><p></p></a></li>
-              <li><a href=""><img src="" alt=""><p></p></a></li>
-              <li><a href=""><img src="" alt=""><p></p></a></li>
-              <li><a href=""><img src="" alt=""><p></p></a></li>
-            </ul>
-          </div>
-        </section>
-      </div>
+      <section id="square_area">
+        <ul class="square_area__ul">
+          <li class="square_area__ul__list">
+            <a href="sample_ume_flower_festival.html">
+              <img src="img/portfolio_sample_ume_flower_festival.png" alt="梅まつりのサンプルページへのリンク、クリックして梅まつりのデザインを見る">
+              <p class="square_area__ul__list__title">梅まつり<br>（Webサイト）</p>
+            </a>
+          </li>
+          <li class="square_area__ul__list">
+            <a href="sample_ma_ru_ferries.html">
+              <img src="img/portfolio_sample_ma_ru_ferries.png" alt="フェリー会社のサンプルページへのリンク、クリックしてフェリー会社のデザインを見る">
+              <p class="square_area__ul__list__title">フェリー<br>（Webサイト）</p>
+            </a>
+          </li>
+          <li class="square_area__ul__list">
+            <a href="sample_cafe1.html">
+              <img src="img/portfolio_sample_cafe1.png" alt="カフェのサンプルページへのリンク、クリックしてカフェのデザインを見る">
+              <p class="square_area__ul__list__title">カフェ<br>（Webサイト）</p>
+            </a>
+          </li>
+          <li class="square_area__ul__list">
+            <a href="sample_spice_herb_recipe1.html">
+              <img src="img/portfolio_sample_spice_herb_recipe1.png" alt="料理レシピのサンプルページへのリンク、クリックして料理レシピのデザインを見る">
+              <p class="square_area__ul__list__title">料理レシピ<br>（Webサイト）</p>
+            </a>
+          </li>
+          <li class="square_area__ul__list">
+            <a href="sample_fireworks_festival_flyer.html">
+              <img src="img/portfolio_sample_fireworks_festival_flyer.png" alt="花火大会のチラシを掲載したサンプルページへのリンク、クリックして花火大会のチラシのデザインを見る">
+              <p class="square_area__ul__list__title">花火大会<br>（チラシ）</p>
+            </a>
+          </li>
+          <!-- 下記の<li></li>は配置のために記述 -->
+          <li class="square_area__ul__list"><a href=""><img src="" alt=""><p class="square_area__ul__list__title"></p></a></li>
+        </ul>
+      </section>
     </main>
 
     <!--#footer--------------------------->
-    <footer id="footer" class="wrapper">
-      <div class="container">
-        <p class="copyright">&copy; fumima_ru</p>
-      </div>
+    <footer id="footer">
+      <p class="footer__copyright">&copy;fumima_ru <span>|</span> last_updated_2024.7.9</p> 
     </footer>
   </body>
-
 </html>

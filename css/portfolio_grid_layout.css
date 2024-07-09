@@ -26,7 +26,11 @@ a {
 
 p {
   text-align: center;
-  font-size: 1.25rem;
+}
+
+/*--#header-----------------*/
+#header {
+  width: 100%;
 }
 
 .header__page_title {
@@ -34,184 +38,64 @@ p {
   margin-top: 50px;
 }
 
-.container {
+.header__message {
+  margin: 30px 30px 0 30px;
+}
+
+/*--#square_area-----------------*/
+#square_area {
   max-width: 1400px;
-  margin: 0 auto;
-}
-
-#header {
-  width: 100%;
-  color: rgb(90, 89, 89);
-}
-
-/* --.link-page-header-menu(.link-page)------------ */
-#header .link-page-header-menu {
-  display: flex;
-  font-weight: 600;
-}
-
-#header .link-page-header-menu #top-menu {
-  margin-right: 30px;
-}
-
-/* --#header #top-menu(.link-page)------------ */
-#header .link-page-header-menu #top-menu,
-#header .link-page-header-menu #page-top {
-  font-weight: 600;
-}
-
-#header .link-page-header-menu #page-top:hover,
-#header .link-page-header-menu #top-menu:hover {
-  text-decoration: underline;
-}
-
-/*--copy-coding.html(css)-----------------*/
-#copy-coding {
-  margin-top: 150px;
-}
-
-.copy-coding-title {
-  font-weight: normal;
-  /* 疑似要素をサイドに移動 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.copy-coding-title::before,
-.copy-coding-title::after {
-  display: block;
-  content: "";
-  background-color: rgb(90, 89, 89);
-  width: 10%;
-  height: 1px;
-  margin: 0 20px;
-}
-
-.copy-codings .list {
-  width: 600px;
-  margin: 0 auto;
-  border: 1px solid rgb(90, 89, 89);
-  margin-bottom: 50px;
-}
-
-.copy-codings .list-responsive {
-  width: 350px;
-  margin: 10px auto;
-}
-
-.copy-codings .list li {
-  font-size: 0.925rem;
-  margin: 30px 10px;
-  list-style: inside;
-  text-decoration: underline;
-}
-
-.copy-codings .list-responsive li {
-  font-size: 0.725rem;
-  margin: 30px 10px;
-  list-style: inside;
-  text-decoration: underline;
-}
-
-.copy-codings .list-responsive {
-  display: none;
-}
-
-.copy-coding-works-1:hover,
-.copy-coding-works-2:hover,
-.copy-coding-works-3:hover,
-.copy-coding-works-4:hover,
-.copy-coding-works-5:hover,
-.copy-coding-works-6:hover,
-.copy-coding-works-7:hover,
-.copy-coding-works-8:hover,
-.copy-coding-works-9:hover,
-.copy-coding-works-10:hover,
-.copy-coding-works-11:hover,
-.copy-coding-works-12:hover,
-.copy-coding-works-13:hover,
-.copy-coding-works-14:hover,
-.copy-coding-works-15:hover,
-.copy-coding-works-16:hover,
-.copy-coding-works-17:hover,
-.copy-coding-works-18:hover {
-  opacity: 0.5;
-}
-
-.copyright {
-  margin: 0 15%;
-}
-
-@media screen and (max-width: 1111px) {
-  /* --レスポンシブ#copy-coding .copy-codings(copy-coding)------ */
-  #header .link-page-header-menu {
-    flex-direction: column;
-    justify-content: right;
-    text-align: right;
-  }
-
-  #header .link-page-header-menu #top-menu {
-    margin-right: 0;
-  }
-
-  #copy-coding {
-    margin-top: 140px;
-  }
-
-  .copy-coding-title {
-    font-size: 0.925rem;
-    width: 350px;
-    margin: 0 auto;
-  }
-
-  .copy-coding-title::before,
-  .copy-coding-title::after {
-    display: none;
-  }
-
-  .copy-codings .list {
-    display: none;
-  }
-
-  .copy-codings .list-responsive {
-    display: block;
-  }
-}
-
-/*--sample.html--produce.html--(css)-----------*/
-#square-list {
-  margin-top: 150px;
+  margin: 70px auto 0 auto;
   text-align: center;
-  margin-top: 140px;
 }
 
-#square-list .square-list-title {
-  margin-bottom: 70px;
-}
-
-#square-list .square-lists .square-list-li {
+.square_area__ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-#square-list .square-lists .square-list-li li {
+.square_area__ul__list {
   width: 25%;
   object-fit: cover;
   margin: 0 10px 40px 10px;
 }
 
-#square-list .square-lists .square-list-li li:hover {
+.square_area__ul__list:hover {
   opacity: 0.7;
 }
 
-/*----produce.html(css)--------------------*/
-.border-solid-img {
+.square_area__ul__list__outer_frame {
   border: 1px solid rgb(90, 89, 89, 0.2);
 }
 
-.border-solid-img:hover {
+.square_area__ul__list__outer_frame:hover {
   border: 1px solid rgb(90, 89, 89);
+}
+
+/*--#footer-----------------*/
+#footer {
+  margin-bottom: 20px;
+}
+
+
+/* --レスポンシブ 576px--------------- */
+@media screen and (max-width: 576px) {
+  .header__page_title {
+    font-size: 0.75rem;
+    margin-top: 30px;
+  }
+  
+  .header__message {
+    font-size: 0.8rem;
+    margin: 10px 10px 0 10px;
+  }
+
+  #square_area {
+    margin: 50px auto 0 auto;
+  }
+
+  .square_area__ul__list__title {
+    font-size: 0.7rem;
+  }
 }
