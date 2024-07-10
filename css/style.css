@@ -254,13 +254,13 @@ main img {
 
   /* --レスポンシブ .container----------------------- */
   .container {
-    height: 1450px;
+    height: 1350px;
     margin-top: 10px;
   }
 
   /* --レスポンシブ #work-------------- */
   .work__ul li {
-    margin: 20px 0 20px 60px;
+    margin: 0 auto 30px auto;
   }
 
   .work__ul li .btn {
