@@ -78,6 +78,7 @@
       <p class="footer__copyright">&copy;fumima_ru <span>|</span> last_updated_2024.7.9</p> 
     </footer>
 
+    <!--script--------------------------->
     <script>
       $(document).ready(function() {
         function workAreaSlick() {
@@ -100,11 +101,8 @@
               },
               {
                 breakpoint: 576,
-                settings: {
-                  vertical: true,
-                  centerMode: false,
-                  slidesToShow: 5,
-                }
+                centerMode: false,
+                settings: "unslick",
               }
             ]
           });
@@ -112,8 +110,17 @@
 
         workAreaSlick();
 
+        let resizeTimer;
+        $(window).on('resize', function() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function() {
+                if ($('.work__ul').hasClass('slick-initialized')) {
+                    $('.work__ul').slick('unslick');
+                }
+                workAreaSlick();
+            }, 250);
+        });
       });
-     
     </script>
     
   </body>
