@@ -112,13 +112,13 @@
 
         let resizeTimer;
         $(window).on('resize', function() {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(function() {
-                if ($('.work__ul').hasClass('slick-initialized')) {
-                    $('.work__ul').slick('unslick');
-                }
-                workAreaSlick();
-            }, 250);
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(function() {
+            if ($('.work__ul').hasClass('slick-initialized')) {
+                $('.work__ul').slick('unslick');
+            }
+            workAreaSlick();
+          }, 250);
         });
       });
     </script>
