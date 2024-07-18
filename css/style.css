@@ -31,13 +31,13 @@ p {
 }
 
 /* --#header----------------------- */
-.header__site_title {
+.header__site-title {
   margin: 20px;
   font-size: 3rem;
   font-weight: 1000;
 }
 
-.header__site_title span {
+.header__site-title span {
   color: rgb(90, 89, 89, 0.5);
 }
 
@@ -68,35 +68,35 @@ p {
   font-size: 3rem;
 }
 
-.work__slick_list {
+.work__slick-list {
   width: 400px !important;
   height: 400px !important;
   text-align: center;
   border-radius: 50%;
 }
 
-.work__slick_list__copy_coding {
+.work__slick-list__copy-coding {
   background-color: rgb(241, 141, 158);
 }
 
-.work__slick_list__sample {
+.work__slick-list__sample {
   background-color: rgb(163, 193, 255);
 }
 
-.work__slick_list__produce {
+.work__slick-list__produce {
   background-color: rgb(91, 200, 172);
 }
 
-.work__slick_list__sns {
+.work__slick-list__sns {
   background-color: rgb(230, 215, 42);
 }
 
-.work__slick_list__steps {
+.work__slick-list__steps {
   background-color: rgb(200, 200, 200);
   pointer-events: none;
 }
 
-.work__slick_list__steps span {
+.work__slick-list__steps span {
   font-size: 1.5rem;
   opacity: 0.5;
 }
@@ -162,7 +162,7 @@ main img {
     font-size: 2rem;
   }
 
-  .work__slick_list {
+  .work__slick-list {
     width: 300px !important;
     height: 300px !important;
   }
@@ -197,12 +197,12 @@ main img {
     font-size: 1.5rem;
   }
 
-  .work__slick_list {
+  .work__slick-list {
     width: 200px !important;
     height: 200px !important;
   }
 
-  .work__slick_list__steps span {
+  .work__slick-list__steps span {
     font-size: 1rem;
     opacity: 0.5;
   }
@@ -211,7 +211,7 @@ main img {
 /* --レスポンシブ 768px------------------- */
 @media screen and (max-width: 768px) {
   /* --レスポンシブ #header----------------------- */
-  .header__site_title {
+  .header__site-title {
     font-size: 2rem;
   }
 
@@ -226,7 +226,7 @@ main img {
     font-size: 1rem;
   }
 
-  .work__slick_list {
+  .work__slick-list {
     width: 150px !important;
     height: 150px !important;
   }
@@ -246,7 +246,7 @@ main img {
 /* --レスポンシブ 576px------------------- */
 @media screen and (max-width: 576px) {
   /* --レスポンシブ #header----------------------- */
-  .header__site_title {
+  .header__site-title {
     margin: 30px;
     font-size: 1.5rem;
     text-align: center;
@@ -268,7 +268,7 @@ main img {
     font-size: 1.5rem;
   }
 
-  .work__slick_list {
+  .work__slick-list {
     width: 200px !important;
     height: 200px !important;
   }
