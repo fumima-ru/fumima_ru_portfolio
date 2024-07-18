@@ -33,7 +33,7 @@ p {
   width: 100%;
 }
 
-.header__page_title {
+.header__page-title {
   text-align: center;
   margin-top: 50px;
 }
@@ -77,24 +77,24 @@ p {
   background-color: rgb(163, 193, 255, 0.2);
 }
 
-.copy_coding__list__introduction__1:hover,
-.copy_coding__list__introduction__2:hover,
-.copy_coding__list__introduction__3:hover,
-.copy_coding__list__introduction__4:hover,
-.copy_coding__list__introduction__5:hover,
-.copy_coding__list__introduction__6:hover,
-.copy_coding__list__beginner__1:hover,
-.copy_coding__list__beginner__2:hover,
-.copy_coding__list__beginner__3:hover,
-.copy_coding__list__beginner__4:hover,
-.copy_coding__list__beginner__5:hover,
-.copy_coding__list__intermediate__1:hover,
-.copy_coding__list__intermediate__2:hover,
-.copy_coding__list__intermediate__3:hover,
-.copy_coding__list__intermediate__4:hover,
-.copy_coding__list__intermediate__5:hover,
-.copy_coding__list__advanced__1:hover,
-.copy_coding__list__advanced__2:hover {
+.copy_coding__list__introduction_1:hover,
+.copy_coding__list__introduction_2:hover,
+.copy_coding__list__introduction_3:hover,
+.copy_coding__list__introduction_4:hover,
+.copy_coding__list__introduction_5:hover,
+.copy_coding__list__introduction_6:hover,
+.copy_coding__list__beginner_1:hover,
+.copy_coding__list__beginner_2:hover,
+.copy_coding__list__beginner_3:hover,
+.copy_coding__list__beginner_4:hover,
+.copy_coding__list__beginner_5:hover,
+.copy_coding__list__intermediate_1:hover,
+.copy_coding__list__intermediate_2:hover,
+.copy_coding__list__intermediate_3:hover,
+.copy_coding__list__intermediate_4:hover,
+.copy_coding__list__intermediate_5:hover,
+.copy_coding__list__advanced_1:hover,
+.copy_coding__list__advanced_2:hover {
   color: black;
 }
 
@@ -106,7 +106,7 @@ p {
 
  /* --レスポンシブ 576px--------------- */
 @media screen and (max-width: 576px) {
-  .header__page_title {
+  .header__page-title {
     margin-top: 20px;
   }
   
