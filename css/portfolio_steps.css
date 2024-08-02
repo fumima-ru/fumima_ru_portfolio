@@ -183,6 +183,9 @@ margin-bottom: 20px;
    Responsive Styles
 --------------------------------------- */
 @media screen and (max-width: 576px) {
+  body {
+    line-height: 2.0;
+  }
   /* ---------------------------------------
    Responsive Global Styles for portfolio_steps.html
   --------------------------------------- */
