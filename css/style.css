@@ -92,8 +92,7 @@ p {
 }
 
 .work__slick-list__steps {
-  background-color: rgb(200, 200, 200);
-  pointer-events: none;
+  background-color: rgb(204, 153, 255);
 }
 
 .work__slick-list__steps span {

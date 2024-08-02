@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #222222;
+  font-size: 1rem;
+  width: 100%;
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #050507;
+  text-decoration: none;
+}
+
+/* ---------------------------------------
+   Global Styles for portfolio_steps.html
+--------------------------------------- */
+.about-learning__period,
+.about-learning__environment,
+.about-learning__resource,
+.about-learning__programming-skills,
+.about-learning__want {
+  margin-bottom: 50px;
+}
+
+.about-learning__section-title {
+  margin-bottom: 10px;
+}
+
+/* ---------------------------------------
+   Section-specific Styles
+--------------------------------------- */
+
+/* --.header----------------------- */
+.header {
+  text-align: center;
+}
+
+.header__link {
+  margin: 30px 0 50px 0;
+  background-color: rgb(204, 153, 255);
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 50px;
+  color: rgb(90, 89, 89);
+  box-shadow: 0px 0px 10px 10px rgb(204, 153, 255);
+}
+
+/* --.about-learning----------------------- */
+.about-learning__section-title {
+  text-align: center;
+}
+
+/* --.about-learning__period----------------------- */
+.about-learning__period__text {
+  text-align: center;
+}
+
+/* --.about-learning__environment----------------------- */
+.about-learning__environment__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.about-learning__environment__item-name {
+  width: 30%;
+  padding: 5px 0 5px 10px;
+  border: solid 1px #222222;
+  margin-top: -1px;
+  margin-right: -1px;
+  width: calc(30% + 1px);
+}
+
+.about-learning__environment__item-value {
+  width: 50%;
+  padding: 5px 0 5px 10px;
+  border: solid 1px #222222;
+  margin-top: -1px;
+}
+
+.about-learning__environment__item-value-link {
+  color: #0000EE;
+  text-decoration: underline;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+/* --.about-learning__resource----------------------- */
+.about-learning__resource__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.about-learning__resource__category-name {
+  width: 30%;
+  padding: 5px 0 5px 10px;
+  border: solid 1px #222222;
+  margin-top: -1px;
+  margin-right: -1px;
+  width: calc(30% + 1px);
+}
+
+.about-learning__resource__category-value {
+  width: 50%;
+  padding: 5px 0 5px 10px;
+  border: solid 1px #222222;
+  margin-top: -1px;
+}
+
+/* --.about-learning__programming-skills-------------- */
+.about-learning__programming-skills__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.about-learning__programming-skills__category-name {
+  width: 30%;
+  padding: 5px 0 5px 10px;
+  border: solid 1px #222222;
+  margin-top: -1px;
+  margin-right: -1px;
+  width: calc(30% + 1px);
+}
+
+.about-learning__programming-skills__category-value {
+  width: 50%;
+  padding: 5px 0 5px 10px;
+  border: solid 1px #222222;
+  margin-top: -1px;
+}
+
+.about-learning__programming-skills__note {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* --.about-learning__want----------------------- */
+.about-learning__want {
+  text-align: center;
+}
+
+.about-learning__want__list {
+  display: inline-block;
+  text-align: left;
+  margin: 0 10px 0 30px;
+}
+
+.about-learning__want__item {
+  padding: 5px 0;
+  list-style: square;
+}
+
+/* --.footer----------------------- */
+.footer {
+margin-bottom: 20px;
+}
+
+.footer__copyright {
+  text-align: center;
+}
+
+/* ---------------------------------------
+   Responsive Styles
+--------------------------------------- */
+@media screen and (max-width: 576px) {
+  /* ---------------------------------------
+   Responsive Global Styles for portfolio_steps.html
+  --------------------------------------- */
+  .about-learning__environment__list,
+  .about-learning__resource__list,
+  .about-learning__programming-skills__list {
+    flex-direction: column;
+  }
+
+  .about-learning__environment__item-name,
+  .about-learning__environment__item-value,
+  .about-learning__resource__category-name,
+  .about-learning__resource__category-value,
+  .about-learning__programming-skills__category-name,
+  .about-learning__programming-skills__category-value {
+    width: 80%;
+    margin: 0 auto -1px auto;
+  }
+
+  .about-learning__environment__item-name,
+  .about-learning__resource__category-name,
+  .about-learning__programming-skills__category-name {
+    background-color: #f1f1f1;
+  }
+
+  /* ---------------------------------------
+   Responsive Section-specific Styles
+  --------------------------------------- */
+
+  /* --.about-learning__programming-skills-------------- */
+  .about-learning__programming-skills__note {
+    text-align: left;
+    margin: 10px 15px 0 15px;
+  }
+}
