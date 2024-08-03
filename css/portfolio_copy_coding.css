@@ -113,6 +113,7 @@ p {
   .header__message {
     margin: 20px 10px 0 10px;
     font-size: 0.8rem;
+    line-height: 2.0;
   }
 
   #copy_coding {
@@ -122,6 +123,7 @@ p {
 
   .copy_coding__list {
     padding: 0 10px;
+    line-height: 1.5;
   }
 
   .footer__copyright {
