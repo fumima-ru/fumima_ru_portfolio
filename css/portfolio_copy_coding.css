@@ -113,7 +113,7 @@ p {
   .header__message {
     margin: 20px 10px 0 10px;
     font-size: 0.8rem;
-    line-height: 2.0;
+    line-height: 1.5;
   }
 
   #copy_coding {
