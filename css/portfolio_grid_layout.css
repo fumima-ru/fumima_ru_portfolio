@@ -89,7 +89,7 @@ p {
   .header__message {
     font-size: 0.8rem;
     margin: 10px 10px 0 10px;
-    line-height: 2.0;
+    line-height: 1.5;
   }
 
   #square-area {
