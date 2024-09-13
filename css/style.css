@@ -49,6 +49,8 @@ p {
 }
 
 /* --#work------------------------- */
+
+
 .work__ul li {
   position: relative;
 }
@@ -76,11 +78,11 @@ p {
 }
 
 .work__slick-list__copy-coding {
-  background-color: rgb(241, 141, 158);
+  background-color: rgb(255, 179, 71);
 }
 
 .work__slick-list__sample {
-  background-color: rgb(163, 193, 255);
+  background-color: rgb(241, 141, 158);
 }
 
 .work__slick-list__produce {
@@ -88,14 +90,19 @@ p {
 }
 
 .work__slick-list__sns {
-  background-color: rgb(230, 215, 42);
+  background-color: rgb(240, 230, 140);
 }
 
 .work__slick-list__steps {
   background-color: rgb(204, 153, 255);
 }
 
-.work__slick-list__steps span {
+.work__slick-list__banner {
+  /* background-color: rgb(163, 193, 255); */
+  background-color: rgb(240, 240, 240);
+}
+
+.work__slick-list__banner span {
   font-size: 1.5rem;
   opacity: 0.5;
 }
@@ -253,7 +260,8 @@ main img {
 
   /* --レスポンシブ .container----------------------- */
   .container {
-    height: 1350px;
+    /* height: 1350px; */
+    height: 1600px;
     margin-top: 10px;
   }
 
