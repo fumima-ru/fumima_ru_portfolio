@@ -142,6 +142,13 @@ a {
   width: calc(30% + 1px);
 }
 
+.about-learning__programming-skills__category-name a {
+  color: #0000EE;
+  text-decoration: underline;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
 .about-learning__programming-skills__category-value {
   width: 50%;
   padding: 5px 0 5px 10px;
