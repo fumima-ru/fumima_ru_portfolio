@@ -97,14 +97,8 @@ p {
   background-color: rgb(204, 153, 255);
 }
 
-.work__slick-list__banner {
-  /* background-color: rgb(163, 193, 255); */
-  background-color: rgb(240, 240, 240);
-}
-
-.work__slick-list__banner span {
-  font-size: 1.5rem;
-  opacity: 0.5;
+.work__slick-list__design {
+  background-color: rgb(163, 193, 255);
 }
 
 /* --main img（手）----------- */
