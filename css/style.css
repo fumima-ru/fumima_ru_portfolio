@@ -30,6 +30,13 @@ p {
   font-size: 1.25rem;
 }
 
+.btn {
+  color: white;
+  text-shadow:
+   -1px -1px 2px rgba(255, 255, 255, 0.6), 
+   2px 2px 3px rgba(0, 0, 0, 0.5);
+} 
+
 /* --#header----------------------- */
 .header__site-title {
   margin: 20px;
@@ -99,6 +106,13 @@ p {
 
 .work__slick-list__design {
   background-color: rgb(163, 193, 255);
+}
+
+.work__slick-list__blog {
+  /* background-color: rgb(50, 70, 130); */
+  /* background-color: rgb(186, 101, 56); */
+  /* background-color: rgb(120, 130, 90); */
+  background-color: rgb(60, 80, 150);
 }
 
 /* --main img（手）----------- */
@@ -252,10 +266,9 @@ main img {
     text-align: center;
   }
 
-  /* --レスポンシブ .container----------------------- */
+  /* --レスポンシブ .container-手の位置調整---------------------- */
   .container {
-    /* height: 1350px; */
-    height: 1600px;
+    height: 1800px;
     margin-top: 10px;
   }
 
@@ -281,7 +294,7 @@ main img {
 
   /* --レスポンシブ #contact---------------------- */
   .contact__message {
-    margin-top: 40px;
+    margin-top: 80px;
     font-size: 0.75rem;
   }
 
