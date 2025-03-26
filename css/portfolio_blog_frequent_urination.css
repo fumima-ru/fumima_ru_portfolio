@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #222222;
+  font-size: 1rem;
+  /*font-family: ;*/
+  width: 100%;
+  min-width: 320px;
+}
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #050507;
+  text-decoration: none;
+}
+
+.flex-center {
+  display: flex;
+}
+
+/* p {
+  text-align: center;
+} */
+
+/* ---------------------------------------
+   Global Styles for portfolio_steps.html
+--------------------------------------- */
+
+
+/* ---------------------------------------
+   Section-specific Styles
+--------------------------------------- */
+
+
+/* ---------------------------------------
+   Responsive Styles
+--------------------------------------- */
+
+/* --.header----------------------- */
+/* --ハンバーガーメニュー------------ */
+/* --.mainvisual------------------- */
+/* --.information------------------ */
+/* --.access----------------------- */
+/* --.contact---------------------- */
+/* --.footer----------------------- */
+
+/* --レスポンシブ------------------- */
+/* Bootstrapのデフォルトのブレークポイント */
+/* 下記を元にpaddingで調整*/
+/*@media (max-width: 576px) { ... } /* Small devices */
+
+/*@media (max-width: 768px) { ... } /* Medium devices */
+
+/*@media (max-width: 992px) { ... } /* Large devices */
+
+/*@media (max-width: 1200px) { ... } /* Extra large devices */
+
+
+
+/* まず、htmlにcustom-containerクラスを作成しておくという理解で良いですか？
+@media (min-width: 1200px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .custom-component {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}*/
+
+/* --レスポンシブ.information------- */
+/* --レスポンシブ.access------------ */
+/* --レスポンシブ.contact----------- */
+/* --レスポンシブ.footer------------ */
+
+/* --やることリスト----------------- */
