@@ -3,7 +3,7 @@
   <head>
     <!-- メタ情報 -->
     <meta charset="UTF-8">
-    <title>fumima_ruポートフォリオ</title>
+    <title>fumima_ru |　Web制作・デザインのポートフォリオ</title>
     <meta name="description" content="fumima_ru（フミマール）のポートフォリオ（Webサイト）へようこそ。Webデザインや開発のスキルを学習中で、模写一覧、サンプル作成、運営サイト、SNS活動など、実践的なプロジェクトを通じて学んだ技術を紹介しています。">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -35,6 +35,7 @@
         <div class="header__site-title">
           <a href="index.html">fumima_ru <span>|</span> ポートフォリオ</a>
         </div>
+        <img src="img/portfolio_fumima_ru_robot.png" alt="fumima_ruポートフォリオのマスコットキャラクター・ロボットの画像" class="img__fumima_ru_robot">
     </header>
 
     <!--main-------------------------->
@@ -43,36 +44,74 @@
         <!--#work----------------------------->
         <section id="work">
           <ul class="work__ul">
-            <li class="work__slick-list work__slick-list__copy-coding">
-              <a href="portfolio_copy_coding.html" class="btn">模写</a>
+
+            <li class="work__list work__list--youtube">
+              <a  href="https://www.youtube.com/@フミマール_web/featured" target="_blank" rel="noopener noreferrer">
+                <h2 class="work__ul__title">youtube</h2>
+                <p>動画編集にはPremiereProを使用しています。素材も主にAdobeの素材を使用したりAdobeで作成しています。</p>
+                <p class="work__ul__url">https://www.youtube.com/@フミマール_web</p>
+              </a>
             </li>
 
-            <li class="work__slick-list work__slick-list__sample_website">
-              <a href="portfolio_sample_website.html"  class="btn">サンプルサイト</a>
+            <!-- ブログ完成後に掲載 -->
+            <!-- <li class="work__list work__list--blog">
+              <a  href="blog.html">
+                <h2 class="work__ul__title">ブログ</h2>
+                <p>WordPressなどのCMSは使用せず、HTMLとCSSで制作しています。ブログを通じてコーディング、ライティング、Webマーケティング、アフィリエイトを学びながら価値のある情報を発信することを目指しています。</p>
+                <p class="work__ul__url">https://fumima-ru.com/blog_privacy_policy.html</p>
+              </a>
+            </li> -->
+
+            <li class="work__list work__list--sns">
+              <a  href="https://www.instagram.com/fumima_ru_web" target="_blank" rel="noopener noreferrer">
+                <h2 class="work__ul__title">SNS</h2>
+                <p>インスタグラムで学習の過程をアウトプットしています。</p>
+                <p class="work__ul__url">https://www.instagram.com/fumima_ru_web</p>
+              </a>
             </li>
 
-            <li class="work__slick-list work__slick-list__produce">
-              <a href="portfolio_produce.html"  class="btn">運営サイト</a>
+            <li class="work__list work__list--produce">
+              <a  href="portfolio_produce.html">
+                <h2 class="work__ul__title">運営サイト</h2>
+                <p>BMI計算、アルファベットの大文字小文字変換を作成しました。シンプルで無駄がなく実用的であることを心掛けています。気に入ったものがあれば自由にご利用下さい。</p>
+                <p class="work__ul__url">https://fumima-ru.com/portfolio_produce.html</p>
+              </a>
             </li>
 
-            <li class="work__slick-list work__slick-list__sns">
-              <a href="https://www.instagram.com/fumima_ru_web" rel="noopener noreferrer" class="btn">SNS</a>
+            <li class="work__list work__list--sample_website">
+              <a  href="portfolio_sample_website.html">
+                <h2 class="work__ul__title">サンプルサイト</h2>
+                <p>架空のお店やイベントなどのWebサイトをサンプルとして作成しています。</p>
+                <p class="work__ul__url">https://fumima-ru.com/portfolio_sample_website.html</p>
+              </a>
             </li>
 
-            <li class="work__slick-list work__slick-list__steps">
-              <a href="portfolio_steps.html" class="btn">これまでの歩み</a>
+            <li class="work__list work__list--copy-coding">
+              <a  href="portfolio_copy_coding.html">
+                <h2 class="work__ul__title">模写</h2>
+                <p>学習の過程で作成したWebページの模写を掲載しています。</p>
+                <p class="work__ul__url">https://fumima-ru.com/portfolio_copy_coding.html</p>
+              </a>
             </li>
 
-            <li class="work__slick-list work__slick-list__design">
-              <a href="portfolio_thumbnail.html" class="btn">デザイン</a>
+            <li class="work__list work__list--design">
+              <a  href="portfolio_thumbnail.html">
+                <h2 class="work__ul__title">デザイン</h2>
+                <p>Photoshopで作成したサムネイルを掲載しています。</p>
+                <p class="work__ul__url">https://fumima-ru.com/portfolio_thumbnail.html</p>
+              </a>
             </li>
 
-            <li class="work__slick-list work__slick-list__blog">
-              <a href="blog.html" class="btn">ブログ</a>
+            <li class="work__list work__list--steps">
+              <a  href="portfolio_steps.html">
+                <h2 class="work__ul__title">これまでの歩み</h2>
+                <p>学習期間、実績、開発環境、習得した技術、今後の方向性などをまとめています。</p>
+                <p class="work__ul__url">https://fumima-ru.com/portfolio_steps.html</p>
+              </a>
             </li>
+
           </ul>
         </section>
-        <img src="img/portfolio_hand.png" alt="手の画像">
       </div>
 
       <!--#contact-------------------------->
@@ -83,53 +122,8 @@
     
     <!--#footer--------------------------->
     <footer id="footer">
-      <p class="footer__copyright">&copy;fumima_ru <span>|</span> last_updated_2024.7.9</p> 
+      <p class="footer__copyright">&copy;fumima_ru <span>|</span> last_updated_2025.4.30</p> 
     </footer>
 
-    <!--script--------------------------->
-    <script>
-      $(document).ready(function() {
-        function workAreaSlick() {
-          $('.work__ul').slick({
-            autoplay: true,
-            autoplaySpeed: 2000,
-            speed: 1000,
-            cssEase: "linear",
-            arrows: false,
-            centerMode: true,
-            centerPadding: '100px',
-            slidesToShow: 3,
-            responsive: [
-              {
-                breakpoint: 992,
-                settings: {
-                  centerPadding: '50px',
-                  slidesToShow: 3,
-                }
-              },
-              {
-                breakpoint: 576,
-                centerMode: false,
-                settings: "unslick",
-              }
-            ]
-          });
-        }
-
-        workAreaSlick();
-
-        let resizeTimer;
-        $(window).on('resize', function() {
-          clearTimeout(resizeTimer);
-          resizeTimer = setTimeout(function() {
-            if ($('.work__ul').hasClass('slick-initialized')) {
-                $('.work__ul').slick('unslick');
-            }
-            workAreaSlick();
-          }, 250);
-        });
-      });
-    </script>
-    
   </body>
 </html>
