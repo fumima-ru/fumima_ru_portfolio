@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  color: rgb(90, 89, 89);
+  color: #392C12;
   font-size: 1rem;
   width: 100%;
   min-width: 320px;
@@ -20,229 +20,119 @@ li {
 }
 
 a {
-  color: rgb(90, 89, 89);
+  color: #392C12;
   text-decoration: none;
   font-weight: 600;
+  display: block
 }
 
 p {
-  text-align: center;
   font-size: 1.25rem;
 }
 
-.btn {
-  color: white;
-  text-shadow:
-   -1px -1px 2px rgba(255, 255, 255, 0.6), 
-   2px 2px 3px rgba(0, 0, 0, 0.5);
-} 
-
 /* --#header----------------------- */
+#header {
+  height: 750px;
+  position: relative;
+}
+
 .header__site-title {
   margin: 20px;
+  text-align: center;
   font-size: 3rem;
-  font-weight: 1000;
+  font-weight: 900;
 }
 
 .header__site-title span {
-  color: rgb(90, 89, 89, 0.5);
+  opacity: 0.5;
+}
+
+/* --main img（フミマール・ロボ）----------- */
+.img__fumima_ru_robot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -1%);
+  max-width: 400px;
+  top: 150px;
+  height: auto;
+  z-index: -5;
 }
 
 /* --.container----------------------- */
 .container {
-  position: relative;
-  height: 900px;
-  margin-top: 100px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* --#work------------------------- */
-
-
-.work__ul li {
-  position: relative;
+.work__list {
+  margin-bottom: 50px;
+  padding-bottom: 5px;
 }
 
-.work__ul li:hover {
-  opacity: 0.8;
+.work__list a {
+  transition: all 0.3s ease;
 }
 
-.work__ul li .btn {
-  position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  cursor: pointer;
-  padding: 175px 0;
-  font-size: 3rem;
+.work__list a:hover {
+  background-color: #392C12;
+  color: white;
+  border-radius: 10px;
 }
 
-.work__slick-list {
-  width: 400px !important;
-  height: 400px !important;
-  text-align: center;
-  border-radius: 50%;
+.work__ul__title {
+  display: inline-block;
+  font-size: 2.5rem;
+  color: #FFED00;
+  background-color: #392C12;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
 
-.work__slick-list__copy-coding {
-  background-color: rgb(255, 179, 71);
+.work__ul__url {
+  color: #1a0dab;
+  font-weight: 400;
+  text-decoration: underline;
+  /* text-underline-offset: 5px; */
+  text-underline-offset: 5px;
+  text-decoration-thickness: 0.5px;
+  word-break: break-all;
+  padding-bottom: 20px;
 }
 
-.work__slick-list__sample_website {
-  background-color: rgb(241, 141, 158);
+.work__list a:hover .work__ul__url {
+  color: white;
 }
 
-.work__slick-list__produce {
-  background-color: rgb(91, 200, 172);
-}
-
-.work__slick-list__sns {
-  background-color: rgb(240, 230, 140);
-}
-
-.work__slick-list__steps {
-  background-color: rgb(204, 153, 255);
-}
-
-.work__slick-list__design {
-  background-color: rgb(163, 193, 255);
-}
-
-.work__slick-list__blog {
-  /* background-color: rgb(50, 70, 130); */
-  /* background-color: rgb(186, 101, 56); */
-  /* background-color: rgb(120, 130, 90); */
-  background-color: rgb(60, 80, 150);
-}
-
-/* --main img（手）----------- */
-main img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  max-width: 1200px;
-  z-index: -1;
+.work__ul p {
+  margin: 5px 10px;
 }
 
 /* --#contact---------------------- */
 .contact__message {
-  position: absolute;
-  bottom: 50px;
-  right: 0;
-  left: 0;
+  text-align: center;
   font-weight: 600;
-  display: inline-block;
-  background-color: rgb(255, 255, 255, 0.7);
-  padding: 5px;
-  border-radius: 5px;
-  white-space: nowrap;
-  width:fit-content;
-  margin: 0 auto;
+  margin: 20px;
 }
 
 /* --#footer---------------------- */
 #footer {
-  position: absolute;
-  bottom: 10px;
-  right: 0;
-  left: 0;
+  text-align: center;
   font-weight: 600;
-  background-color: rgb(255, 255, 255, 0.7);
-  padding: 5px;
-  border-radius: 5px;
-  white-space: nowrap;
-  width:fit-content;
-  margin: 0 auto;
+  margin: 20px;
 }
 
 .footer__copyright span {
-  color: rgb(90, 89, 89, 0.5);
-}
-
-/* --レスポンシブ 1600px------------------- */
-@media screen and (max-width: 1600px) {
-  .container {
-    height: 600px;
-  }
-
-  /* --レスポンシブ main img（手）----------- */
-  main img {
-    max-width: 700px;
-  }
-
-  /* --レスポンシブ #work-------------- */
-  .work__ul li .btn {
-    padding: 135px 0;
-    font-size: 2rem;
-  }
-
-  .work__slick-list {
-    width: 300px !important;
-    height: 300px !important;
-  }
-
-  #contact {
-    text-align: center;
-  }
-
-  .contact__message {
-    position: static;
-    margin-top: 100px;
-    text-align: center;
-    white-space: normal;
-  }
-
-  #footer {
-    position: static;
-    margin-top: 10px;
-  }
-
-  .footer__copyright {
-    margin-bottom: 10px;
-  }
-}
-
-
-/* --レスポンシブ 1200px------------------- */
-@media screen and (max-width: 1200px) {
-  /* --レスポンシブ #work-------------- */
-  .work__ul li .btn {
-    padding: 85px 0;
-    font-size: 1.5rem;
-  }
-
-  .work__slick-list {
-    width: 200px !important;
-    height: 200px !important;
-  }
-
-  .work__slick-list__steps span {
-    font-size: 1rem;
-    opacity: 0.5;
-  }
+  opacity: 0.5;
 }
 
 /* --レスポンシブ 768px------------------- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   /* --レスポンシブ #header----------------------- */
   .header__site-title {
     font-size: 2rem;
-  }
-
-  /* --レスポンシブ .container----------------------- */
-  .container {
-    height: 550px;
-  }
-
-  /* --レスポンシブ #work-------------- */
-  .work__ul li .btn {
-    padding: 65px 0;
-    font-size: 1rem;
-  }
-
-  .work__slick-list {
-    width: 150px !important;
-    height: 150px !important;
   }
 
   /* --レスポンシブ #contact---------------------- */
@@ -256,50 +146,39 @@ main img {
   }
 }
 
-
 /* --レスポンシブ 576px------------------- */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 500px) {
   /* --レスポンシブ #header----------------------- */
+  #header {
+    height: 450px;
+  }
+
   .header__site-title {
     margin: 30px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
   }
 
-  /* --レスポンシブ .container-手の位置調整---------------------- */
-  .container {
-    height: 1800px;
-    margin-top: 10px;
+  .img__fumima_ru_robot {
+    max-width: 200px;
+    top: 120px;
+  }
+  /* --レスポンシブ #work-------------- */
+  .work__ul__title {
+    font-size: 1.5rem;
   }
 
-  /* --レスポンシブ #work-------------- */
   .work__ul li {
     margin: 0 auto 30px auto;
   }
 
-  .work__ul li .btn {
-    padding: 90px 0;
-    font-size: 1.5rem;
-  }
-
-  .work__slick-list {
-    width: 200px !important;
-    height: 200px !important;
-  }
-
-  /* --レスポンシブ main img（手）----------- */
-  main img {
-    max-width: 400px;
-  }
-
   /* --レスポンシブ #contact---------------------- */
   .contact__message {
-    margin-top: 80px;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
 
   /* --レスポンシブ #footer---------------------- */
   .footer__copyright {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
 }
