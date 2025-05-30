@@ -110,18 +110,39 @@ p {
   margin: 5px 10px;
 }
 
-/* --#contact---------------------- */
-.contact__message {
-  text-align: center;
-  font-weight: 600;
-  margin: 20px;
-}
-
 /* --#footer---------------------- */
 #footer {
   text-align: center;
   font-weight: 600;
   margin: 20px;
+}
+
+#siteinfo {
+  margin-bottom: 20px;
+}
+
+#siteinfo ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#siteinfo li {
+  display: inline;
+}
+
+#siteinfo a {
+  color: #1a0dab;
+}
+
+#siteinfo a:hover {
+  text-decoration: underline;
+}
+
+#siteinfo span {
+  opacity: 0.5;
+  padding: 0 0.5rem;
 }
 
 .footer__copyright span {
@@ -135,12 +156,11 @@ p {
     font-size: 2rem;
   }
 
-  /* --レスポンシブ #contact---------------------- */
-  .contact__message {
+  /* --レスポンシブ #footer---------------------- */
+  .siteinfo__list a {
     font-size: 1rem;
   }
 
-  /* --レスポンシブ #footer---------------------- */
   .footer__copyright {
     font-size: 1rem;
   }
@@ -172,12 +192,10 @@ p {
     margin: 0 auto 30px auto;
   }
 
-  /* --レスポンシブ #contact---------------------- */
-  .contact__message {
+  /* --レスポンシブ #footer---------------------- */
+  .siteinfo__list a {
     font-size: 0.85rem;
   }
-
-  /* --レスポンシブ #footer---------------------- */
   .footer__copyright {
     font-size: 0.85rem;
   }
