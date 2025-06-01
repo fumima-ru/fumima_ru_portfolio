@@ -210,6 +210,36 @@ li {
 margin-bottom: 20px;
 }
 
+#siteinfo {
+  margin-bottom: 20px;
+}
+
+#siteinfo ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  line-height: 1.5;
+}
+
+.siteinfo__list {
+  display: inline;
+  margin: 0;
+}
+
+#siteinfo a {
+  color: #1a0dab;
+}
+
+#siteinfo a:hover {
+  text-decoration: underline;
+}
+
+#siteinfo span {
+  opacity: 0.5;
+  padding: 0 0.5rem;
+}
+
 .footer__copyright {
   text-align: center;
 }
@@ -269,5 +299,12 @@ margin-bottom: 20px;
   /* --.about-learning__programming-skills-------------- */
   .about-learning__programming-skills__note {
     margin: 10px 15px 0 15px;
+  }
+
+    .siteinfo__list a {
+    font-size: 0.85rem;
+  }
+  .footer__copyright {
+    font-size: 0.85rem;
   }
 }
