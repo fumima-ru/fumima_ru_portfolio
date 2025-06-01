@@ -126,6 +126,7 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  line-height: 1.5;
 }
 
 #siteinfo li {
