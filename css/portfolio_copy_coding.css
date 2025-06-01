@@ -105,6 +105,34 @@ p {
   margin-bottom: 20px;
 }
 
+#siteinfo {
+  margin-bottom: 20px;
+}
+
+#siteinfo ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  line-height: 1.5;
+}
+
+.siteinfo__list {
+  display: inline;
+}
+
+#siteinfo a {
+  color: #1a0dab;
+}
+
+#siteinfo a:hover {
+  text-decoration: underline;
+}
+
+#siteinfo span {
+  opacity: 0.5;
+  padding: 0 0.5rem;
+}
 
  /* --レスポンシブ 576px--------------- */
 @media screen and (max-width: 576px) {
@@ -128,7 +156,10 @@ p {
     line-height: 1.5;
   }
 
+    .siteinfo__list a {
+    font-size: 0.85rem;
+  }
   .footer__copyright {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 }
