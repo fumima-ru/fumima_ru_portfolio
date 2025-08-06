@@ -23,6 +23,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     <!-- JavaScriptのライブラリ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -31,88 +34,123 @@
 
   <body>
     <!--#header-------------------------->
-    <header id="header">
-        <h1 class="header__site-title">
-          <a href="index.html">fumima_ru <span>|</span> ポートフォリオ</a>
-        </h1>
-        <img src="img/portfolio_fumima_ru_robot.png" alt="fumima_ruポートフォリオのマスコットキャラクター・ロボットの画像" class="img__fumima_ru_robot">
+    <header class="header">
+      <!-- リンク一覧（SNSなどの外部リンク） -->
+      <nav class="header__nav">
+        <ul class="header__nav__list">
+          <li class="header__nav__list--youtube"><a  href="https://www.youtube.com/@フミマール_web/featured" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a></li>
+          <li class="header__nav__list--instagram"><a  href="https://www.instagram.com/fumima_ru_web" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></li>
+          <li class="header__nav__list--twitter"><a  href="https://x.com/fumima_ru_web" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a></li>
+          <li class="header__nav__list--github"><a href="https://github.com/fumima-ru" target="_blank"  rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></li>
+          <!-- 後で追加 -->
+          <!-- <li class="header__nav__list--figma"><a href="https://www.figma.com/@yourprofile" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-figma"></i></a></li> -->
+          <li class="header__nav__list--crowdworks"><a href="https://crowdworks.jp/public/employees/1585149" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-briefcase"></i></a></li>
+        </ul>
+      </nav>
+
+      <h1 class="header__site-title">
+        フミマール<span class="header__line-break">ポートフォリオ</span>
+      </h1>
+
     </header>
 
     <!--main-------------------------->
     <main>
-      <div class="container">
-        <!--#work----------------------------->
-        <section id="work">
-          <ul class="work__ul">
+      <video autoplay muted loop playsinline>
+        <source src="video/portfolio_fumima_ru_hero_image_202507.mov" type="video/mp4">
+        お使いのブラウザでは動画が再生できません。
+      </video>
+      <!-- ピンク -->
+      <a href="#work"><button class="start-button">START</button></a>
 
-            <li class="work__list work__list--youtube">
-              <a  href="https://www.youtube.com/@フミマール_web/featured" target="_blank" rel="noopener noreferrer">
-                <h2 class="work__ul__title">youtube</h2>
-                <p>動画編集にはPremiereProを使用しています。素材も主にAdobeの素材を使用したりAdobeで作成しています。</p>
-                <p class="work__ul__url">https://www.youtube.com/@フミマール_web</p>
-              </a>
-            </li>
+      <p class="story-link">
+        <!-- 完成したらアップする -->
+        <!-- <a href="">▶ これまでのストーリーを読む</a> -->
+      </p>
 
-            <!-- ブログ完成後に掲載 -->
-            <!-- <li class="work__list work__list--blog">
-              <a  href="blog.html">
-                <h2 class="work__ul__title">ブログ</h2>
-                <p>WordPressなどのCMSは使用せず、HTMLとCSSで制作しています。ブログを通じてコーディング、ライティング、Webマーケティング、アフィリエイトを学びながら価値のある情報を発信することを目指しています。</p>
-                <p class="work__ul__url">https://fumima-ru.com/blog_privacy_policy.html</p>
-              </a>
-            </li> -->
+      <!--#work----------------------------->
+      <section id="work">
+        <ul>
+          <!-- ブログ完成後に掲載 -->
+          <!-- <li class="work__list work__list--blog">
+            <a  href="blog.html">
+              <h2 class="work__ul__title">ブログ</h2>
+              <p>WordPressなどのCMSは使用せず、HTMLとCSSで制作しています。ブログを通じてコーディング、ライティング、Webマーケティング、アフィリエイトを学びながら価値のある情報を発信することを目指しています。</p>
+              <p class="work__ul__url">https://fumima-ru.com/blog_privacy_policy.html</p>
+            </a>
+          </li> -->
 
-            <li class="work__list work__list--sns">
-              <a  href="https://www.instagram.com/fumima_ru_web" target="_blank" rel="noopener noreferrer">
-                <h2 class="work__ul__title">SNS</h2>
-                <p>インスタグラムで学習の過程をアウトプットしています。</p>
-                <p class="work__ul__url">https://www.instagram.com/fumima_ru_web</p>
-              </a>
-            </li>
+          <li class="work__category work__category--web-coding">
+            <div class="work__category-flex">
 
-            <li class="work__list work__list--produce">
-              <a  href="portfolio_produce.html">
-                <h2 class="work__ul__title">運営サイト</h2>
-                <p>BMI計算、アルファベットの大文字小文字変換を作成しました。シンプルで無駄がなく実用的であることを心掛けています。気に入ったものがあれば自由にご利用下さい。</p>
-                <p class="work__ul__url">https://fumima-ru.com/portfolio_produce.html</p>
-              </a>
-            </li>
+              <div class="work__info">
+                <h2 class="work__heading-lv2 work__heading-lv2--web-coding">Webコーディング</h2>
+                <img class="work__category__img" src="img/portfolio_web-coding_img.jpg" alt="Webコーディングのイメージ画像">
+              </div>
 
-            <li class="work__list work__list--sample_website">
-              <a  href="portfolio_sample_website.html">
-                <h2 class="work__ul__title">サンプルサイト</h2>
-                <p>架空のお店やイベントなどのWebサイトをサンプルとして作成しています。</p>
-                <p class="work__ul__url">https://fumima-ru.com/portfolio_sample_website.html</p>
-              </a>
-            </li>
+              <ul class="work__list__ul">
+                <li class="work__list work__list--produce">
+                  <a href="portfolio_produce.html">運営サイト</a>
+                </li>
 
-            <li class="work__list work__list--copy-coding">
-              <a  href="portfolio_copy_coding.html">
-                <h2 class="work__ul__title">模写</h2>
-                <p>学習の過程で作成したWebページの模写を掲載しています。</p>
-                <p class="work__ul__url">https://fumima-ru.com/portfolio_copy_coding.html</p>
-              </a>
-            </li>
+                <li class="work__list work__list--sample_website">
+                  <a href="portfolio_sample_website.html">サンプルサイト</a>
+                </li>
 
-            <li class="work__list work__list--design">
-              <a  href="portfolio_thumbnail.html">
-                <h2 class="work__ul__title">デザイン</h2>
-                <p>Photoshopで作成したサムネイルを掲載しています。</p>
-                <p class="work__ul__url">https://fumima-ru.com/portfolio_thumbnail.html</p>
-              </a>
-            </li>
+                <li class="work__list work__list--copy-coding">
+                  <a href="portfolio_copy_coding.html">模写</a>
+                </li>
+              </ul>
 
-            <li class="work__list work__list--steps">
-              <a  href="portfolio_steps.html">
-                <h2 class="work__ul__title">これまでの歩み</h2>
-                <p>学習期間、実績、開発環境、習得した技術、今後の方向性などをまとめています。</p>
-                <p class="work__ul__url">https://fumima-ru.com/portfolio_steps.html</p>
-              </a>
-            </li>
+            </div>
+          </li>
 
-          </ul>
-        </section>
-      </div>
+          <li class="work__category work__category--web-design">
+            <div class="work__category-flex">
+
+              <div class="work__info">
+                <h2 class="work__heading-lv2 work__heading-lv2--web-design">Webデザイン</h2>
+                <img  class="work__category__img" src="img/portfolio_web-design_img.jpg" alt="Webデザインのイメージ画像">
+              </div>
+
+              <ul>
+                <!-- <li>バナー（実装予定）</li> -->
+
+                <li class="work__list work__list--thumbnail">
+                  <a href="portfolio_thumbnail.html">サムネイル作成</a>
+                </li>
+
+                <!-- <li>Figma（実装予定）</li> -->
+
+                <!-- 画像編集のページが完成したら実装 -->
+                <!-- <li class="work__list work__list--image-editing">
+                  <a href="portfolio_image_editing.html">画像編集</a>
+                </li> -->
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="work__category work__category--tech-summary">
+            <div class="work__category-flex">
+
+              <div  class="work__info">
+                <h2 class="work__heading-lv2 work__heading-lv2--tech-summary">開発環境･スキル</h2>
+                <img class="work__category__img" src="img/portfolio_tech-summary_img.jpg" alt="開発環境･スキルのイメージ画像">
+              </div>
+
+              <ul>
+                <li class="work__list work__list--steps">
+                  <a href="portfolio_steps.html">これまでの歩み</a>
+                </li>
+              </ul>
+
+            </div>
+          </li>
+
+        </ul>
+      </section>
+      
     </main>
     
     <!--#footer--------------------------->
@@ -129,7 +167,7 @@
         </ul> 
       </section>
 
-      <p class="footer__copyright">&copy;fumima_ru <span>|</span> last_updated_2025.5.30</p> 
+      <p class="footer__copyright">&copy;fumima_ru <span>|</span> last_updated_2025.8.6</p> 
     </footer>
 
   </body>
