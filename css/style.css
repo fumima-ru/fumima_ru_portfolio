@@ -37,6 +37,7 @@ p {
 .header {
   position: relative;
   height: 100vh;
+  height: 100vh;
   color: white;
 }
 
@@ -89,7 +90,7 @@ video {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   object-fit: cover;
   z-index: -1;
   margin-left: -1%;
@@ -270,7 +271,6 @@ video {
   /* --レスポンシブ header----------------------- */
   .header__nav {
     position: absolute;
-    bottom: 20px;
     right: 20px;
     line-height: 3;
     text-align: center;
@@ -338,7 +338,7 @@ video {
   .siteinfo__list a {
     font-size: 0.85rem;
   }
-  
+
   .footer__copyright {
     font-size: 0.85rem;
   }
