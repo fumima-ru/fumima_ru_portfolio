@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #222222;
+  font-size: 1rem;
+  font-family: 'Kosugi Maru', 'Yu Gothic', 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
+
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+li::marker {
+  color: rgba(51, 51, 51, 0.4);
+}
+
+a {
+  color: #050507;
+  text-decoration: none;
+}
+
+.header {
+  margin: 30px;
+  line-height: 1.8;
+  background-color: rgba(51, 51, 51, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.story {
+  margin-right: 30px;
+  margin-left: 60px;
+  margin-bottom: 30px;
+
+  line-height: 1.8;
+}
+
+.story__li {
+  list-style: square;
+  list-style-position: inside;
+}
+
+.story__li::marker {
+  color: rgba(51, 51, 51, 0.4);
+}
+
+.footer {
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+
+#siteinfo {
+  margin-bottom: 20px;
+}
+
+#siteinfo ul {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  line-height: 1.5;
+}
+
+.siteinfo__list {
+  display: inline;
+}
+
+#siteinfo a {
+  color: rgba(100, 149, 237);
+}
+
+#siteinfo a:hover {
+  text-decoration: underline;
+}
+
+#siteinfo span {
+  opacity: 0.5;
+  padding: 0 0.5rem;
+}
+
+.footer__copyright span {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+  }
+
+  .header {
+    margin: 0;
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  .story {
+    margin: 20px;
+  }
+
+  .footer {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+  .siteinfo__list a {
+    font-size: 0.85rem;
+  }
+
+  .footer__copyright {
+    font-size: 0.85rem;
+  }
+}
